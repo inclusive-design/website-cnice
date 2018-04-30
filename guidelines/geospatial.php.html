@@ -1,0 +1,1862 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN	"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="">
+
+
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  		<title>Canadian Network For Inclusive Cultural Exchange</title>
+		<link rel="stylesheet" href="../cnice-gl.css" />
+
+</head>
+<body bgcolor="white" >
+
+
+<a href="geospatial.php.html#content"><img src="geospatial.php.html" alt="Jump to content area" height="1" width="1" border="0" /></a>
+<img src='../cnice_logo.gif' alt="the CNICE logo, four people dancing around a globe and a book" style="position: absolute; left: 8px; top: 38px" />
+ 
+<table width="100%" cellpadding="0" border="0" cellspacing="0">
+   <tr>
+   		 <td valign="top" width="100%" style="height: 117px; background-image: URL(../line.jpg); background-color: white; background-repeat: repeat-x; background-position: top left; padding: 0em; margin:0em">
+   		 <div height="117px" width="100%" style="width: 100%; margin: 0em; padding: 0em; background-repeat: no-repeat; background-position: top right; background-image: URL(../curve.jpg)">
+		<p style="height:117px; padding-top:60px; padding-left:140px; padding-right: 120px; margin:0px;">
+   		<b style="color: #003366; text-transform: uppercase; font-family: times roman, serif; border-bottom: thin #c4790f solid">Canadian Network <span style="text-transform: lowercase; font-style: italic;">for</span> Inclusive Cultural Exchange</b>
+   		  </p>
+ 		 </div>		 
+   		 </td>  
+   		  <td valign="top" style="height: 117px; background-color: white; padding: 0em; margin:0em">
+   		 <div height="117px" style="margin: 0em; padding: 0em; background-repeat: repeat-x; background-position: top left; background-image: URL(../bluebar.jpg)">
+   		
+   		    
+   		 <form style="height:117px; margin:0px" action="https://search.utoronto.ca:8765/uoftall/query.html"
+           method="get" name="utsearch">
+<br />
+<b style="color:white">Search&nbsp;the&nbsp;<acronym="Canadian Network for Inclusive Cultural Exchange">CNICE</acronym>&nbsp;website:</b><br />
+ 				<input type="text" name="qt" value="" /><br /><input type="image" src="../search.gif" alt="search" />
+
+                             <input type="hidden" name="nh" value="10" />
+
+                                   <input type="hidden" name="rf" value="0" />
+                                    <input type="hidden" name="lk" value="1" />
+
+
+                               <input type="hidden" name="qp" value="url:www.utoronto.ca/atrc/reference/CNICE" />
+
+
+
+ 				</form>
+
+
+ 				</div>
+ 				</td>
+   </tr>
+   
+	 <tr>
+
+		 <td colspan="2" width="100%" style="background-color: white; margin-top:0px; margin-bottom:0px; padding:0px"><div style="visibility: hidden"><a href="geospatial.php.html#maincontent">Jump to Content</a></div>
+					<div class="nav" style="position: absolute; top: 155px; padding-left: 150px; margin-bottom:0px; padding-bottom:0px">
+			 		 <a class="nav" href="../index.php.html">Home</a> |
+ 					 <a class="nav" href="../overview.php.html">About CNICE</a> |
+ 					 <a class="nav" href="../guidelines.php.html">Guidelines Documents</a> |
+ 					 <a class="nav" href="../content.php.html">Model Content</a> |
+ 					 <a class="nav" href="../tools.php.html">Accessibility Tools</a> |
+ 					 <a class="nav" href="../resources.php.html">Resources</a> |
+ 					 <a class="nav" href="../sitemap.php.html">Site Map</a> |
+ 					 <a class="nav" href="../contact.php.html">Contact</a>|
+		 			 <a class="nav" href="http://cnice.idrc.ocadu.ca/guidelines/acollab/home.php">Forum</a>
+
+ 					 </div>
+ 		
+		 </td>
+
+
+   </tr>
+   <tr>
+   <td colspan="2" style="background-color: white;">
+
+<div class="mainbody">
+
+
+
+
+<a id="5" name="5"></a>
+<img src="images/Title5.gif" alt="5: Representations of Visual Geo-Spatial Information" /> 
+<hr />
+
+<br />
+<a id="5.1" name="5.1"></a>
+
+<h2>5.1	Introduction</h2>
+
+
+<p>There is a strong visual bias to web content. This document aims to provide some solutions to barriers in accessing online geo-spatial content, particularly to those who are blind or have low vision. It discusses sensory modality translation techniques, considerations and guidelines, resources, and the design of recommended digital media formats capable of conveying spatial information. Some of the content involves relatively new technologies, such as tactile interfaces. It is hoped that government on-line content designers can benefit from this document, and in turn, a larger spectrum of their clientele.
+</p> 
+
+<p>This discussion is primarily about tactile and audio cues in electronic map and web3D environments: how to enhance detail, give context, and ease navigation and way-finding. It bootstraps off of previous work done at the Adaptive Technology Resource Centre of the University of Toronto. The CANARIE Health Education Network project <em>Adding Feeling</em>, <em>Audio and Equal Access to Distance Education</em> had the technical objectives of facilitating the creation of accessible environments, and included a model courseware module designed to assist in teaching geography to students who are blind. Major research influences on this document were:
+</p>
+<ul>
+	<li>Carleton University's Drs. Taylor and Siekierska <em>et al</em> work on audio-tactile mapping on the web with voice annotations and haptic feedback, to be found on the Natural Resources Canada site <a href="http://tactile.nrcan.gc.ca">http://tactile.nrcan.gc.ca</a>.</li>
+	<li>Drs. Bulatov and Gardner at Oregon State's Science Access Project, who gave several new paradigms for tactile information display.</li>
+	<li>Dr. Calle Sjöström at Certec, Lund Institute of Technology, Sweden, on non-visual haptic interaction design.</li>
+	<li>Dr. Norm Vinson of the National Research Council's Institute for Information Technology, who has kindly provided his research on navigation in virtual environments.</li>
+</ul>
+
+<p>This document starts with the more familiar, computer-based 2D geo-spatial context, usually in the form maps and explores transformations from visual media to audio modes, progressing to the sense of touch. The on-line graphical format Scalable Vector Graphics (SVG) is a primary focus, with resources and application techniques provided. The Web-based 3D technologies of Virtual Reality Modeling Language (VRML) and its offspring X3D are in turn explored, with more resources and application techniques on the issues. Discussion of sensory modality complementarity and supplementary guidelines on designing for navigation and way-finding in virtual environments wrap up the document.
+</p>
+
+
+<br />
+<a id="5.2" name="5.2"></a>
+
+<h2>5.2	2D Content</h2>
+
+
+<p>Online visuals no longer entail simple static imagery. The complexities of information display call for more intuitive ways of accessing meaning through alternate or concurrent channels. Most online geo-spatial content takes the form of maps, which are not only essential but extremely valuable tools. Digital maps on the Web are often provided through increasingly flexible Geographic Information Systems (GIS) and allow people from different sectors and disciplines to make and use maps to analyze data in sophisticated ways.
+</p>
+
+	<a id="5.2.1" name="5.2.1"></a>
+	
+	<h3>5.2.1	Translations: Visual to Sound</h3>
+	
+	
+	<p>In cartographic documents symbols are defined as "the graphic elements shown on a map designed to represent geographic features or communicate a message, at a given scale" (<em>The Atlas of Canada</em>, Natural Resources, <a href="http://atlas.gc.ca/site/english/learning_resources/carto">atlas.gc.ca/site/english/learning_resources/carto</a>). Map symbols can be pictorial or abstract in nature. Similarly aural symbols can either be metaphorical or abstract in nature. In a cartographic environment there is also the possibility of providing the user with sound actually recorded at the site being represented. While this possibility remains untested, possible uses for this type of representation are worthwhile. In this section text will also be discussed as a possibility for representing elements of a cartographic document.
+	</p>
+	
+	<p><u>Aural Text (Voices)</u><br />
+	Textual descriptions of objects are the most intuitive way to describe elements of a map. For example, having a voice say "school" easily and informatively does the task of identifying a school symbol. Also, aural text can easily provide additional information about the school without a steep learning curve from the user (provided the user speaks the language being spoken in the aural text).
+	</p>
+	
+	<p>There are two ways aural text can be integrated into a user interface. Recording a person's voice saying the text is perhaps the most obvious way to include aural text. The sound files generated in the recording can then be attached to the appropriate objects to be played according to the parameters of the interface (activating the sound on mouse over, on focus, on keystroke). 
+	</p>
+	
+	<p><em>Consideration:</em> Currently Adobe's SVG viewer will play <em>wav</em> and <em>au</em> files. The SVG standard has yet to implement a standardized way of attaching sounds to objects in an SVG environment. The delay in this implementation was caused by a lack of open source sound format. Currently the only open source sound format is <em>ogg</em>. Future SVG browsers will probably be capable of playing <em>ogg</em> files.
+	
+	<p>The second way to include aural text as part of an interface is to implement a text to speech engine, which will allow the computer to speak any electronic text out loud in a synthesized voice. When a text to speech engine is implemented all that need be done is attach the electronic text version of what is to be said to the object it is to represent. Aural interfaces, such as screen readers, implement such text to speech engines. 
+	</p>
+	
+	<p><em>Consideration:</em> A significant advantage of this method of including aural text is the saving of file size. Electronic text takes up very little space and leaving the creation of the audio to the interface is very efficient. However, the trick to successfully making electronic text available to a text to speech engine is knowing where to put it. In most well developed technologies an aural interface such as a screen reader will be able to flexibly access any electronic text contained in a document. In the case of SVG, a technology that is still early in its development, a screen reader may not be able to find electronic text unless it is put in a very specific place in the file. So far we have been able to show that a screen reader can access electronic text contained in the "<font face="Arial, Helvetica, sans-serif">title</font>" tag, but not the "<font face="Arial, Helvetica, sans-serif">label</font>" or "<font face="Arial, Helvetica, sans-serif">text</font>" tags.
+	</p>
+	
+	<p>When a designer is creating aural text for an interface there are several things that should be kept in mind. The text should be as clear and concise as possible. Just as map symbols visually communicate information in clear and concise ways the aural text that is attached to a symbol must be equivalently clear at delivering the information in an aural format. If recorded sound is being used the quality of sound must be such that the voice is easily comprehended. 
+	</p>
+	
+	<p>If more than one voice is being used to disseminate the information there are some additional factors the designer must consider. When a person listens to disembodied voices the natural thing for the persons mind to do is to establish context. The easiest way to do this is by establishing what relationship the voices have. If two voices are present the listener will try to establish what roll each voice is playing (teacher/student, boss/employee, buyer/seller,) and which voice is dominant. As the number of voices increases the number of possible relationships between the voices will increase exponentially. As it is not desirable to have the user preoccupied with trying to determine which voice is speaking in what context, it is best to keep the number of voices being used to a minimum. While it is important to minimize the number of voices being used, multiple voices can assist the user in quickly comprehending information if different voices are used to delineate types of information. For instance, one voice may be used to give directional information, while another is used to voice basic symbol titles, and perhaps yet another voice gives geographic information.
+	</p>
+	
+	<dl>
+		<dt><em>Consideration:</em> Use two different voices in the description of an object, one voice to give the type of data, another voice to deliver the specific data itself. For example:</dt>
+			<dd>Voice 1: School</dd>
+			<dd>Voice 2: University of Toronto, St George Campus</dd>
+	</dl>	
+	
+	<p><u>Abstract sounds</u>
+	Sounds of an abstract nature comprise a category that encompasses all the beeps, whistles and buzzes computer applications make to convey information. The sounds may also be musical in nature. It is very easy to make this sort of sound short with respect to time and small with respect to storage space. Sounds are very good for giving cause and effect related feedback to users and to indicate the state of an element. The other value of abstract sounds is that it is easy to sonify data about the object being represented. For instance, a sound representing a topographical line might be higher or lower depending on the height the line represents. This gives the user information about what map symbol they are viewing and the approximate value it represents. This sound variation is an excellent way to communicate a relatively large amount of information in a very short amount of time. There is a long history of aural interfaces being used to sonify data as in the case of hospital heart monitors or Geiger counters.
+	</p>
+	
+	<p><em>Consideration:</em> Of all the attributes a sound can have (pitch, duration, volume) pitch or change in pitch is the most effective at communicating the state or change in state of an object (Walker and Ehrenstein, 2000). 
+	</p>
+	
+	<p>While abstract sounds can be used to identify objects it becomes quickly difficult for a user to memorize a large list of objects represented with abstract sounds. Abstract sounds may also have musical qualities (melody, harmony, rhythm) that can be used to enhance its ability to contain information. This possibility is useful when expressing more complex data sets. A set of abstract sounds with musical attributes could be used to give a user a summary of the type and scope of the elements contained in a geographic area (Joseph and Lodha, 2002).
+	</p>
+	
+	<p><em>Consideration:</em> Rhythm is the most memorable element that a group of sounds can have. A list of abstract sounds that employ rhythm as one of their defining characteristics will be easier for a user to remember.
+	</p>
+	
+	<p><u>Aural metaphors</u>
+	Aural metaphors are sounds that are reminiscent of sounds in the real world. It would seem that these types of sounds would be a natural fit for representing symbols on a map, as a map is a representation of the real world. These types of sounds work well for representing objects as the sound itself assists the user in identifying or recalling what the associated object is. This basis in the real-world can greatly reduce the learning curve a user goes through as they learn to read the map, and reduce reliance on the legend.
+	</p>
+	
+	<p><em>Consideration:</em> Aural metaphors work very well for representing real world objects, such as types of buildings (school, bank, museum), areas (park or quarry), or infrastructure (roads, highways, transit or rail). There are some exceptions to this general rule of thumb. There are some real world objects that do not make sound or are not intuitively associate with a sound, such as a mountain range or even a generic building. Maps also represent abstraction of the real world such as political boundaries or topographical measurements. Aural metaphors don't naturally represent these mapping elements.
+	</p>
+	
+	<p>Most objects in the real world that easily have sounds associated with them do not make a single type sound. For instance, a park can easily be associated with the sound of children playing, dogs barking, playground equipment squeaking, or people talking. A designer must approach most objects that will be represented with an aural metaphor with the intention of using synecdoche, where the part will represent the whole. For example, a park may be represented by the sound of a child's laugh.
+	</p>
+	
+	<p>It is difficult to control the length of aural metaphors as they must endure long enough allow the metaphor to be recognized, and many real world sounds have an absolute length. Lengthy representations of symbols mean that it will slow the user down while looking for the information they want, and file sizes will be larger. In many cases this length may be unavoidable, in which case the effect on the ability of the user to efficiently read the map must be considered.
+	</p>
+	
+	<p><em>Consideration:</em> If a real world sound is to be edited for length there are some things to keep in mind. The human ear identifies a sound based on its attack (the beginning of a sound) and its decay (the end of a sound). Any changes to the attack or delay of a sound will affect the listener's ability to identify the sound. The body of a sound (the middle part) is the most generic to the human ear. The body tells the listener how loud the sound is and how long it lasts, but its quality is not used to identify the sound. If a sound is to be changed in length the changes must be made to the body of the sound if it is to remain identifiable to the human ear.
+	</p>
+	
+	<p><em>Location based sounds</em>
+	There is a fourth possibility for representing elements on a map with sound that could be referred to as location based sounds. These sounds would be used in the representation of actual places and would consist of a recording taken from the place being represented. For instance a location based sound for a specific park would involve recording a short (and hopefully representative) amount of time of the sounds from the park. Such a representation could give much information about the element being represented to the listener, who upon listening to the sound could potentially determine whether there was a playground in the park, whether there was a body of water in the park, or whether dogs were commonly found in the park. To the best of the writer's knowledge, this sort of representation has never been implemented in a geo-spatial context, and the practical usefulness of such representations is not known.
+	</p>
+	
+	<a id="5.2.1.1" name="5.2.1.1"></a>
+	<h4>5.2.1.1	Spatialized Audio</h4>
+	
+	<p>Maps express geo-spatial data in a two dimensional, visual, symbolic format. When considering an aural alternative to visual geo-spatial maps it seems natural to take advantage of our ability to hear in three dimensions.
+	</p>
+	
+	<p>Aural displays (generally, acoustic speakers) are capable of creating the illusion that a sound is coming from a specific location. A stereo auditory display uses two speakers to generate the illusion of a sound coming from a specific spot, which can be located anywhere between the two speakers. This illusion, called the <em>stereo image</em>, is created by playing the sound louder on one speaker, creating the impression that the sound is located between the two speakers, though closer to the louder. The successful creation of a stereo image depends on the correct placement of the speakers, preferably at ear level and at the correct distance apart. This placement and method can provide the illusion of sound coming from a very specific location. A sound designer attaches panning or EQ effects to a sound to allow it to be displayed in three dimensions by a stereo system.
+	</p>
+	
+	<p>Panning is a feature of an electronic sound that has been authored for spatialized display systems, such as stereo or surround speakers. The panning effect is measured in percentages of left or right; centered referring to the state of being 0% left and 0% right. If panning is set to 100% right, the stereo image will give the illusion of a sound source coming from the right speaker. Likewise, panning 100% left gives the illusion of sound coming from the position of the left speaker. This is not to say that when panning is set to 100% right, there is <em>no</em> sound coming from the left speaker. If a person hears a sound that comes from their front-right, their left ear will still pick up some of that sound. To create a true illusion of sound coming from the far right, some sound would still have to come from the left speaker. The further an object is, the more sound a person will hear in the ear furthest from the source. The closer an object, the less sound a person will hear in the ear furthest from the source, until the source is so close that the sound is only heard in one ear. (Thus, the effect of something whispering in one ear.) We call this attribute of panning <em>divergence</em>, which can be manipulated by a sound designer to further create the illusion that a sound is coming from a specific location. If divergence is set to 100%, the sound source will seem to be extremely close to the listener. If divergence is set to 0%, sound will always be equal in both speakers, creating the effect of a distant sound coming from beyond the horizon.
+	</p>
+	
+	<p><em>Consideration:</em> Remember that panning and divergence have relative values, displayed differently on different sets of stereo speakers. It is impossible to express absolute proximity or position using panning. The position of the sound source will stay relative to the position of the two speakers, with the absolute position varying from one set of speakers to another. 
+	</p>
+	
+	<p>EQ (equalization) is the determination dominant frequencies in a sound. The effect of EQ on the spatial effect is related to how distinctly a sound stands out when played in the context of other sounds. If the frequencies that are distinguished in a sound are unique in the soundscape, the human ear will easily hear it as being in the foreground and distinct. A sound that shares its dominant frequencies with other sounds in a soundscape will "blend," causing the sound to recede into the aural background. 
+	</p>
+	
+	<p>If a designer creates a group of sounds playing at the same time in order to depict a complete set of geo-spatial data, distinctness is vital. Ensuring that each sound has its own space in the spectrum of frequencies will help users distinguish different sounds from one another. The process of consciously doing this is called "carving EQ holes."
+	</p>
+	
+	<p><em>Consideration:</em> When carving EQ holes, determine whether the sound that is to be predominant (or made "present") is in the low (20Hz-100Hz), mid-low (100Hz-500Hz), middle (500Hz-2kHz), mid-high (2kHz-8kHz) or high (8kHz-20kHz) frequency range. Next determine what the central frequency of the sound is, and boost it. Take all other sounds in the group sharing the same frequency range with the sound in question and reduce that same frequency.
+	</p>
+	
+	<p><em>Consideration: Sibilance</em> is the hissing sound people make when they say the letter "s." When a recorded sound has sibilance, there is a hissing accompanying the actual sound. If the sound designer notices that a sound has strong sibilance, they can lower the EQ of the sound at 6-8kHz to eliminate the hiss.
+	
+	
+	<a id="5.2.1.2" name="5.2.1.2"></a>
+	<h4>5.2.1.2	The Aural Legend</h4>
+	
+	<p>On a traditional map the reader will find a legend detailing the meaning of symbols found on the map and explaining the mapping method used (such as scale or measurement systems.) The reader will typically use the strategy of glancing back and forth between the legend and the area being viewed. The reader of a map who uses an aural interface will need access to the same information. Due to the limited scanning ability of the aural sense this strategy would not work well for the latter, especially if the number of items represented in the legend were extensive. 
+	</p>
+	
+	<p><em>Consideration:</em> It becomes much more important to the user of an aural interface that objects represented on a map have their characteristics intrinsically associated with its representation.
+	</p>
+	
+	<p>One of the greatest differences between visual and aural interfaces with respect to geo-spatial maps is the issue of scale. A necessity of visual geo-spatial maps, scale becomes irrelevant to the user of an aural interface. 
+	</p>
+	
+	<p><em>Consideration:</em> All measurements of distance can be given in real terms with out any encumbrance on the usability of the map.
+	</p>
+	
+	
+	<a id="5.2.1.3" name="5.2.1.3"></a>
+	<h4>5.2.1.3	Information Scalability</h4>
+	
+	<p>In the study "Multichannel Auditory Search: Toward Understanding Control Processes in Polychotic Auditory Listening" (Lee, 2001), Mark Lee observes that our aural attentional systems experience overload faster than our visual attentional systems when presented with data sets of increasing size. That is to say, when a person is presented with a large amount of concurrent aural data, his/her ability to synthesize the data is quickly compromised. Lee found that our ability to pick information out of multiple data sets (that are spatially differentiated) is far more limited than comparative tasks using the visual sense.
+	</p>
+	
+	<p><em>Consideration:</em> When displaying geo-spatial mapping data with sound, avoid overwhelming users with too much concurrent information.
+	</p>
+	
+	<p>A single map can give information about topography, political boundaries, infrastructure (roads, rail, shipping), population (cities, towns, regions), or structures for an area potentially covering the entire earth. Geo-spatial maps are potentially among the most complex data sets possible, simultaneously giving great quantities of many different types of information. The limited ability of the auditory sense to scan complex sets of data must be considered when an aural interface is designed, especially when the information to be disseminated is know to be a complex set. 
+	</p>
+	
+	<p><em>Consideration:</em> In the case of geo-spatial mapping data it becomes very important for the different types of data to be contained in different layers that can be hidden and revealed by the user. Providing this ability to hide and reveal information enables the user to create a simple data stream that can be more easily scanned with the aural sense while containing the most relevant information. 
+	</p>
+	
+	<p>However the user may require many types of information delivered at once in a related context. This would require many layers to be revealed to the user plaited in the output of the aural interface. To compensate for the complexity of this output the user should have another way to scale the delivered information.
+	</p>
+	
+	<p><em>Consideration:</em> Another way geo-spatial mapping information can be scaled is by restricting the size of the area being displayed. Just as an ideal aural interface for geo-spatial information should have different types of information separated into layers the total area of a geo-spatial map should be divided so as to allow the display to be restricted to a single area. For instance, if a user is able to restrict the displayed area to a single intersection, many different types of information can be displayed (streets, buildings, topography) without overwhelming the scanning ability of the aural sense.
+	</p>
+	
+	<a id="5.2.1.4" name="5.2.1.4"></a>
+	<h4>5.2.1.4	Translation Algorithms</h4>
+	
+	<p>Translation algorithm suggests aural equivalents to the visual elements of a geo-spatial map. Keep in mind that across modalities, there is simply no one-to-one full translation equivalent. In choosing approximate meaning equivalents for visual mapping data we have three types of sound to choose from: aural text, real world sound (relating to object type), and abstract sound effect.
+	</p>
+	
+	<p>To make an aural map useful a method of navigation that is independent of hand eye coordination is very important. For a small and simple map section, such as would be used for the following example, we believe that selecting the arrow keys to navigate from object to object will allow the users to orient themselves to the geo-spatial content. When a user moves cursor focus onto a map object there is an initial sonification consisting of an audio icon (sound) and short descriptive text. The user may then use the tab key to prompt for even more audio information about the object, such as further description or directional information.
+	</p>
+	
+	<p>Naturally in a larger or more complicated geo-spatial map, such simple navigation would not suffice. More elaborate methods of filtering and selecting and navigating through information is suggested in the geo-political translation algorithm to follow.
+	</p>
+	
+	<p><a href="geospatial.php.html#table5">Table 5</a> and <a href="geospatial.php.html#table6">Table 6</a> represent aural equivalents for a mapped intersection consisting of two streets, four buildings/structures, and a Park. The two charts, representing the same intersection, test the representation of the mapped elements fusing aural metaphors in the first chart, and abstract sounds in the second chart.
+	
+	<p><u>Urban Intersection Scenario</u><br />
+	The following translation matrix conveys the sounds in an aural interface for an urban intersection map.
+	</p>
+	
+	<p>
+	<a id="table5" name="table5"></a>
+	<table width="100%" border="1">
+	  <tr>
+		<td><div align="center"><strong>Object</strong></div></td>
+		<td><div align="center"><strong>Audio icon</strong></div></td>
+		<td><div align="center"><strong>Descriptive Text</strong></div></td>
+		<td><div align="center"><strong>Directional Text</strong></div></td>
+	  </tr>
+	  <tr>
+		<td>Street 1</td>
+		<td><a href="audio/vwstartdrive.wav">Traffic</a></td>
+		<td>James Street</td>
+		<td>North/south</td>
+	  </tr>
+	  <tr>
+		<td>Street 2</td>
+		<td><a href="audio/vwstartdrive.wav">Traffic</a></td>
+		<td>Helen Avenue</td>
+		<td>East/west</td>
+	  </tr>
+	  <tr>
+		
+    <td height="43">Intersection</td>
+		<td><a href="audio/cuckoo-q.wav">Toronto Intersection sound</a></td>
+		<td>James and Helen</td>
+		<td>Map coordinates x, y</td>
+	  </tr>
+	  <tr>
+		<td>Building 1 (school)</td>
+		<td><a href="audio/chalkboard.wav">Chalk on board</a></td>
+		<td>School; Saint George Elementary</td>
+		<td>North west corner; James and Helen</td>
+	  </tr>
+	  <tr>
+		<td>Building 2 (Bus Shelter)</td>
+		<td><a href="audio/busdoorslide.wav">Bus doors opening bus doors</a></td>
+		<td>James street bus stop; bus # 54</td>
+		<td>South east corner; James and Helen</td>
+	  </tr>
+	  <tr>
+		<td>Building 3 (Bank)</td>
+		<td><a href="audio/coinstable.wav">Coin</a></td>
+		<td>First national bank</td>
+		<td>North west corner; James and Helen</td>
+	  </tr>
+	  <tr>
+		<td>Building 4 (Library)</td>
+		<td><a href="audio/bookpages.wav">Book pages</a></td>
+		<td>Brook View public library</td>
+		<td>North west corner; James and Helen</td>
+	  </tr>
+	  <tr>
+		<td>Area 1 (Park)</td>
+		<td><a href="audio/kidscheer.wav">Children playing/cheering</a></td>
+		<td>Begrundi Memorial park</td>
+		<td>North of Helen on James; west side</td>
+	  </tr>
+	</table>
+	<p class="cap">Table 5: Real world or aural metaphor sounds for an intersection map.</p>
+	</p>
+	
+	<p>
+	<a id="table6" name="table6"></a>
+	<table width="100%" border="1">
+	  <tr>
+		<td><div align="center"><strong>Object</strong></div></td>
+		<td><div align="center"><strong>Audio icon</strong></div></td>
+		<td><div align="center"><strong>Descriptive Text</strong></div></td>
+		<td><div align="center"><strong>Directional Text</strong></div></td>
+	  </tr>
+	  <tr>
+		<td>Street 1</td>
+		<td><a href="audio/earcon1_2.wav">Abstract 1</a></td>
+		<td>James Street</td>
+		<td>North/south</td>
+	  </tr>
+	  <tr>
+		<td>Street 2</td>
+		<td><a href="audio/earcon1_2.wav">Abstract 2</a></td>
+		<td>Helen Avenue</td>
+		<td>East/west</td>
+	  </tr>
+	  <tr>
+		<td>Intersection</td>
+		<td><a href="audio/earcon3.wav">Abstract 3</a></td>
+		<td>James and Helen</td>
+		<td>Map coordinates x, y</td>
+	  </tr>
+	  <tr>
+		<td>Building 1 (school)</td>
+		<td><a href="audio/earcon4_6_7.wav">Abstract 4</a></td>
+		<td>School; Saint George Elementary</td>
+		<td>North west corner; James and Helen</td>
+	  </tr>
+	  <tr>
+		<td>Building 2 (Bus Shelter)</td>
+		<td><a href="audio/earcon_5.wav">Abstract 5</a></td>
+		<td>James street bus stop; bus # 54</td>
+		<td>South east corner; James and Helen</td>
+	  </tr>
+	  <tr>
+		<td>Building 3 (Bank)</td>
+		<td><a href="audio/earcon4_6_7.wav">Abstract 6</a></td>
+		<td>First national bank</td>
+		<td>North west corner; James and Helen</td>
+	  </tr>
+	  <tr>
+		<td>Building 4 (Library)</td>
+		<td><a href="audio/earcon4_6_7.wav">Abstract 7</a></td>
+		<td>Brook View public library</td>
+		<td>North west corner; James and Helen</td>
+	  </tr>
+	  <tr>
+		<td>Area 1 (Park)</td>
+		<td><a href="audio/earcon_8.wav">Abstract 8</a></td>
+		<td>Begrundi Memorial park</td>
+		<td>North of Helen on James; west side</td>
+	  </tr>
+	</table>
+	<p class="cap">Table 6: Abstract sounds for an intersection map.</p>
+	</p>
+	
+	<p><u>Geo-Political Map Scenario</u><br />
+	The following translation matrix conveys the sounds in an aural interface for a geo-political map.
+	</p>
+	
+	<p>
+	<a id="table7" name="table7"></a>
+	<table width="100%" border="1">
+	  <tr>
+		<td><div align="center"><strong>Geographic Element</strong></div></td>
+		<td><div align="center"><strong>User Action</strong></div></td>
+		<td><div align="center"><strong>Non-speech Audio</strong></div></td>
+		<td><div align="center"><strong>Speech</strong></div></td>
+	  </tr>
+	  <tr>
+		<td>Latitude and Longitude Lines</td>
+		<td>Proximity</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Over</td>
+		<td>Elastic, Boing</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Mouse Click</td>
+		<td>&nbsp;</td>
+		<td>"X Longitude"</td>
+	  </tr>
+	  <tr>
+		<td>Provincial Boundaries</td>
+		<td>Proximity</td>
+		<td>Rapid clicking</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Over</td>
+		<td>Sucking in and then out sound</td>
+		<td>"Provincial Boundary between x and y"</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Mouse Click</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>Provinces</td>
+		<td>Proximity</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Over</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Mouse Double Click</td>
+		<td>Three note ascending scale with clarinet, continuous</td>
+		<td>Shape of Ontario</td>
+	  </tr>
+	  <tr>
+		<td>Regions, Maritimes, Central Canada, Prairies, Arctic, West Coast</td>
+		<td>Proximity</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Over</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>F1 key</td>
+		<td>Three note ascending scale with oboe, continuous</td>
+		<td>X Region of Canada</td>
+	  </tr>
+	  <tr>
+		<td>Cities</td>
+		<td>Proximity</td>
+		<td>Busy City Street Sound, cars honking, people talking, traffic</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Over</td>
+		<td>Increase volume upon entering zone, interrupted by speech</td>
+		<td>Name of City spoken</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Mouse Click</td>
+		<td>&nbsp;</td>
+		<td>City and Population Size spoken</td>
+	  </tr>
+	  <tr>
+		<td>Provincial Capital</td>
+		<td>Proximity</td>
+		<td>Busy City Street Sound, cars honking, people talking, traffic</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Over</td>
+		<td>Increase volume upon entering zone, interrupted by speech</td>
+		<td>Name of City spoken</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Mouse Click</td>
+		<td>&nbsp;</td>
+		<td>City, Capital of X, Population Y</td>
+	  </tr>
+	  <tr>
+		<td>Canadian CapitalOttawa</td>
+		<td>Proximity</td>
+		<td>National Anthem</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Over</td>
+		<td>Louder interrupted by speech</td>
+		<td>Speak "Ottawa, Canada's Capital"</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Mouse Click</td>
+		<td>&nbsp;</td>
+		<td>City and Size spoken</td>
+	  </tr>
+	  <tr>
+		<td>Lakes</td>
+		<td>Proximity</td>
+		<td>Small wave lapping with loon sound</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Over</td>
+		<td>Louder interrupted by speech</td>
+		<td>Lake Y</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Mouse Click</td>
+		<td>&nbsp;</td>
+		<td>Lake Y, size in Square miles</td>
+	  </tr>
+	  <tr>
+		<td>Rivers</td>
+		<td>Proximity</td>
+		<td>Whitewater river sound</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Over</td>
+		<td>Louder interrupted by speech</td>
+		<td>Y River</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Mouse Click</td>
+		<td>&nbsp;</td>
+		<td>Y River, x miles long, flowing into y</td>
+	  </tr>
+	  <tr>
+		<td>Waterways</td>
+		<td>Proximity</td>
+		<td>Harbour sound, boats chugging, tooting</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Over</td>
+		<td>Louder interrupted by speech</td>
+		<td>St. Lawrence Seaway</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Mouse Click</td>
+		<td>&nbsp;</td>
+		<td>X waterway, route from x to y</td>
+	  </tr>
+	  <tr>
+		<td>Ocean</td>
+		<td>Proximity</td>
+		<td>Waves, Seagulls</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Over</td>
+		<td>Louder, Interrupted by speech</td>
+		<td>X Ocean</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Mouse Click</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>Towns</td>
+		<td>Proximity</td>
+		<td>Playground sounds</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Over</td>
+		<td>Louder interrupted by Speech</td>
+		<td>Name of Town</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Mouse Click</td>
+		<td>&nbsp;</td>
+		<td>Name of Town, Population X</td>
+	  </tr>
+	  <tr>
+		<td>Major roadways</td>
+		<td>Proximity</td>
+		<td>Highway, Cars zooming past</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Over</td>
+		<td>Louder interrupted by speech</td>
+		<td>Highway x</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Mouse Click</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>Railways</td>
+		<td>Proximity</td>
+		<td>Train sounds</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Over</td>
+		<td>Louder interrupted by speech</td>
+		<td>X Rail</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Mouse Click</td>
+		<td>&nbsp;</td>
+		<td>X Rail between Y and Z</td>
+	  </tr>
+	  <tr>
+		<td>International Boundaries</td>
+		<td>Proximity</td>
+		<td>American Anthem</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Over</td>
+		<td>Louder interrupted by speech</td>
+		<td>"International Border with the United States"</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Mouse Click</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>Mouse Double Click</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	  </tr>
+	</table>
+	<p class="cap">Table 7: Geopolitical map translation matrix.</p>
+	</p>
+	
+	<a id="5.2.2" name="5.2.2"></a>
+	
+	<h3>5.2.2	Translations: Visual to Touch</h3>
+	
+	
+	<p>For general discussions on types of Haptic Devices see <a href="http://cnice.idrc.ocadu.ca/guidelines/Guidelines.html#1.5.3.1">1.5.3.1 Haptic Devices</a> and <a href="http://cnice.idrc.ocadu.ca/guidelines/Guidelines.html#1.6.2.3">1.6.2.3 Visuals to Haptics</a>. This document focuses on tactile effect authoring software for the consumer level haptic device technology (called TouchSense) licensed by Immersion Corporation. 
+	</p>
+	
+	
+	<a id="5.2.2.1" name="5.2.2.1"></a>
+	<h4>5.2.2.1	Full Force and Tactile Feedback Distinctions</h4>
+	
+	<p>Immersion Corporation defines the difference between their force and tactile feedback devices as follows (<a href="http://www.immersion.com/developer/technology/devices">www.immersion.com/developer/technology/devices</a>):
+	</p>
+	
+	<blockquote>The term <strong>full force feedback</strong> is used to refer to devices that apply sideways forces to your hand to resist your motion or give the impression of turbulence, recoil, impact, G-forces, or countless other phenomena. If the device can physically push on you, it's probably a full force feedback device. Many force feedback gaming devices fall into this category.
+	</blockquote>
+	
+	<blockquote>The term <strong>tactile feedback</strong> is used to describe devices that play high-fidelity tactile sensations, but generally won't move or inhibit the movement of either the device or the hand holding it. A tactile feedback device can play a wide variety of distinguishable taps, textures, and vibration effects to communicate with the user and greatly enrich the computing or gaming experience. A number of pointing and gaming devices fall into this category.
+	</blockquote>
+	
+	<a id="5.2.2.2" name="5.2.2.2"></a>
+	<h4>5.2.2.2	Haptic Effects Provided by Immersion Corporation</h4>
+		
+	<p>Following are pre-set, editable effects offered from the Immersion Studio library. While there is a large selection for force feedback devices, there is a small selection for tactile feedback devices, due to their limited nature.
+	</p>
+	
+	<p>Effects for Immersion Full-Force Feedback Devices:
+	</p>
+	<ul>
+		<li><strong><em>Angle Wall Effec</em></strong>t - feel like a wall at an arbitrary angle</li>
+		<li><strong><em>Axis Wall Effect</em></strong> - feel like vertical or horizontal wall</li>
+		<li><strong><em>Damper Effect</em></strong> - feel like dragging a stick through water</li>
+		<li><strong><em>Ellipse Effect</em></strong> - used to attract the cursor to the inside of the ellipse, keep the cursor outside of the ellipse, or attract the cursor to the border surround the ellipse</li>
+		<li><strong><em>Enclosure Effect</em></strong> - used to attract the cursor to the inside of the rectangle, keep the cursor outside of the rectangle, or attract the cursor to the border surround the rectangle</li>
+		<li><strong><em>Friction Effect</em></strong> - feel like pushing a mass across a rough surface</li>
+		<li><strong><em>Grid Effect</em></strong> - creates a 2-dimensional array of snap points or snap lines</li>
+		<li><strong><em>Inertia Effect</em></strong> - feel like pushing a mass on wheels</li>
+		<li><strong><em>Slope Effect</em></strong> - feel like rolling a ball up and/or down a hill</li>
+		<li><strong><em>Spring Effect</em></strong> - feel like compressing a spring</li>
+		<li><strong><em>Texture Effect</em></strong> - causes mouse to feel as if it were traveling over a series of bumps</li>
+		<li><strong><em>Periodic Effect</em></strong> - feel like a simple back and forth motion or a high frequency vibration</li>
+		<li><strong><em>Pulse Effect</em></strong> - identical to Vector Force but its default duration is much shorter to create a "pop" sensation</li>
+		<li><strong><em>Ramp Effect</em></strong> - creates a force that either steadily increases or steadily decreases over a discrete time</li>
+		<li><strong><em>Vector Force Effect</em></strong> - constant force over a discrete time</li>
+	</ul>	
+	
+	<p>Effects for <em>Immersion</em> Tactile-Feedback Devices
+	</p>
+	<ul>
+		<li><strong><em>Ellipse Effect</em></strong> - a small "pulse" will be emitted when cursor is over the border of the ellipse </li>
+		<li><strong><em>Enclosure Effect</em></strong> - a small "pulse" will be emitted when cursor is over the border of the rectangle</li>
+		<li><strong><em>Grid Effect</em></strong> - creates a 2-dimensional array of lines which emits a "pulse" when cursor is over it.</li>
+		<li><strong><em>Texture Effect</em></strong> - causes mouse to feel as if it were traveling over a series of bumps by pulses as the mouse moves.</li>
+		<li><strong><em>Periodic Effect</em></strong> - high or low frequency vibrations</li>
+		<li><strong><em>Pulse Effect</em></strong> - create a "pop" sensation</li>
+	</ul>
+	
+	<a id="5.2.2.3" name="5.2.2.3"></a>
+	<h4>5.2.2.3	Tactile Effects Applied to Geospatial Content</h4>
+	
+	<p>Each effect has parameters (such as duration, gain, magnitude, phase, waveform) that can be finessed for specific results. User action of proximity refers to cursor being outside of but in a predefined number of pixels from the element.
+	</p>
+	
+	<p>Following is a translation algorithm for representing typical map elements with haptic effects using a <strong>full-force feedback</strong> mouse or trackball.
+	</p>
+	
+	<p>
+	<a id="table8" name="table8"></a>
+	<table width="100%" border="1">
+	  <tr> 
+		<td><div align="center"><strong>Geographic Element</strong></div></td>
+		<td><div align="center"><strong>User Action</strong></div></td>
+		<td><div align="center"><strong>Possible Haptic Effects</strong></div></td>
+		<td><div align="center"><strong>Description of Effect</strong></div></td>
+	  </tr>
+	  <tr> 
+		<td><strong>Latitude and Longitude Lines</strong></td>
+		<td>Over</td>
+		<td>Spring</td>
+		<td>Elastic</td>
+	  </tr>
+	  <tr> 
+		<td rowspan="2"><strong>Provincial Boundaries</strong></td>
+		<td>Proximity</td>
+		<td>Slope</td>
+		<td>Thin trench on both sides of curtain</td>
+	  </tr>
+		  <tr> 
+			<td>Over</td>
+			<td>Spring</td>
+			<td>Elastic curtain</td>
+		  </tr>
+	   <tr> 
+		<td><strong>Provinces</strong></td>
+		<td>Mouse Double Click</td>
+		<td>Ramp</td>
+		<td>Relief of province rises/Alternatively sinks</td>
+	  </tr>
+	  <tr> 
+		<td><strong>Regions, Maritimes, Central Canada, Prairies, Arctic, West Coast</strong></td>
+		<td>F1 key </td>
+		<td>Ramp</td>
+		<td>Relief of Region Rises/Falls (toggled)</td>
+	  </tr>
+	  <tr> 
+		<td rowspan="2"><strong>Cities</strong></td>
+		<td>Proximity</td>
+		<td>Ellipse</td>
+		<td>Slight gravity well around sphere</td>
+	  </tr>
+		  <tr> 
+			<td>Over </td>
+			<td>Slope</td>
+			<td>1/2 sphere</td>
+		  </tr>
+	  <tr> 
+		<td rowspan="2"><strong>Provincial Capital</strong></td>
+		<td>Proximity</td>
+		<td>Enclosure</td>
+		<td>Slight Gravity Well around Pyramid</td>
+	  </tr>
+		  <tr> 
+			<td>Over</td>
+			<td>Slope</td>
+			<td>Pyramid</td>
+		  </tr>
+	  <tr> 
+		<td rowspan="2"><strong>Canadian Capital Ottawa</strong></td>
+		<td>Proximity</td>
+		<td>Ellipse</td>
+		<td>Slight gravity well around stars</td>
+	  </tr>
+		  <tr> 
+			<td>Over</td>
+			<td>Slope</td>
+			<td>1/2 sphere</td>
+		  </tr>
+	  <tr> 
+		<td rowspan="2"><strong>Lakes</strong></td>
+		<td>Proximity</td>
+		<td>Slope</td>
+		<td>Depression around lake</td>
+	  </tr>
+		  <tr> 
+			<td>Over</td>
+			<td>Periodic</td>
+			<td>Pulsing waves of resistance</td>
+		  </tr>
+	  <tr> 
+		<td><strong>Rivers</strong></td>
+		<td>Over</td>
+		<td>Slope</td>
+		<td>Trench</td>
+	  </tr>
+	  <tr> 
+		<td rowspan="2"><strong>Waterways</strong></td>
+		<td>Proximity</td>
+		<td>Slope</td>
+		<td>Trench along sides</td>
+	  </tr>
+		  <tr> 
+			<td>Over</td>
+			<td>Periodic</td>
+			<td>Washboard in direction of flow</td>
+		  </tr>
+	  <tr> 
+		<td rowspan="2"><strong>Ocean</strong></td>
+		<td>Proximity</td>
+		<td>Slope</td>
+		<td>Depression Around Coast</td>
+	  </tr>
+		  <tr> 
+			<td>Over</td>
+			<td>Periodic</td>
+			<td>Pronounced Waves</td>
+		  </tr>
+	  <tr> 
+		<td><strong>Towns</strong></td>
+		<td>Over</td>
+		<td>Slope</td>
+		<td>Small slightly raised square</td>
+	  </tr>
+	  <tr> 
+		<td><strong>Major roadways</strong></td>
+		<td>Over</td>
+		<td>Slope</td>
+		<td>Raised ribbon with indentation in middle</td>
+	  </tr>
+	  <tr> 
+		<td><strong>Railways</strong></td>
+		<td>Over</td>
+		<td>Texture</td>
+		<td>Raised ribbon with horizontally running indentations</td>
+	  </tr>
+	  <tr> 
+		<td><strong>International Boundaries</strong></td>
+		<td>Over</td>
+		<td>Slope</td>
+		<td>Very high Edge</td>
+	  </tr>
+	</table>
+	<p class="cap">Table 8: Translation algorithm for representing typical map elements with haptic effects.</p>
+	</p>
+	
+	<p>Unlike Full-Force feedback devices, which can create the effect of resistance when the pointing device is over an object, <strong>tactile feedback</strong> pointing devices are limited to variations of pulses and vibrations. As a result, the number of geographic elements that can possibly be represented by tactile effects is very limited, and should be accompanied by other modalities of representation (see <a href="geospatial.php.html#5.4">5.4 Modality Complementarity</a>).
+	</p>
+	  
+	<p><em>Consideration:</em> Pulses experienced through a tactile feedback device may not be very informative since a single "bump" may indicate that either a user has passed over or is currently on an object. Consider, for example, an image of a thin line such that when the cursor is over the image, a single pulse is emitted. However, when a user is moving the cursor about and passes over the image, the user will also feel a pulse. If the goal for the user was to move the cursor along the line, it will be very difficult for them to distinguish between being currently over the image or having just passed over it. 
+	</p>
+	
+	<p>Periodic effects can best be utilized in geo-spatial applications as follows:
+	</p>
+	 
+	<p><strong>Vibrations with a constant frequency or amplitude</strong> can be used as indications for a single geographic element, such as roads or relief. Using the example of roads, varying the frequency can indicate the type of road when the cursor is over the object. A high frequency might be used for highways, low frequency for side streets. 
+	
+	<p><strong>Vibrations with varying frequencies or amplitudes</strong> can be used as indications for specific objects, such as towns, buildings or points of interest. For example, a building can be indicated by a "buzzing" effect where vibrations cycle from large to small amplitudes when the cursor is over the object.
+	</p>
+	
+	<a id="5.2.3" name="5.2.3"></a>
+	
+	<h3>5.2.3	Format: Scalable Vector Graphics (SVG)</h3>
+	
+		
+	<p>Scalable Vector Graphics (SVG) is an XML compliant graphics format being developed by the World Wide Web Consortium (W3C, <a href="http://www.w3.org">www.w3.org</a>) to be the dominant method of rendering graphics on the Web. An open standard, it is being adapted by conventional web browsers. Full SVG specifications can be found at <a href="http://www.w3.org/TR/SVG">http://www.w3.org/TR/SVG</a>. While this technology continues to undergo development, it already shows great promise in terms of creating accessible, interactive graphical environments.
+	</p>
+	
+	<p>Access to information can be greatly enhanced through interactive features made possible by the SVG format. By allowing a user to hide different elements, information can be simplified and made easier to read in a SVG document. A strength of the SVG format is the ability of the creator to layer information. By grouping similar elements in a layer within the context of a larger document allows the user to more easily locate the element, or group of elements that contain the information they are searching for.
+	</p>
+	
+	<p>Geo-spatial content is typically rendered in a graphical medium with an iconic language that is very difficult to translate into another medium. SVG gives the map creator the ability to associate electronic text with graphical elements and layers of graphical elements. This electronic text, unlike the iconic language of geo-spatial maps, is easily transformed into another mode, such as audio. An audio interface such as a screen reader can render the electronic text in the form of a spoken voice giving the aural user access to a graphical element. Of course, the creator of a map in the SVG format will have to include descriptive text for the aural interface to read. SVG authoring programs in the future should contain prompts allowing content creators to easily include text information about the elements and layers they are creating.
+	</p>
+	
+	<p>Earlier iterations of the SVG standard had some limitations that affected the accessibility of SVG documents. Java script handlers controlling keyboard control, vital to the success of an aural interface, could not be used due to a lack of keyboard support in the Document Object Model (DOM) before the inception of level 3. This lack keyboard support prevented testing aural interfaces built with SVG for the duration of this project. With the inception of DOM level 3 validation on January 27, 2004 and the continued development of SVG 1.2 (still in working draft as of March 18, 2004) this problem has been solved. It is not known how many of the SVG browsers have implemented support for the working version of SVG 1.2.
+	</p>
+	
+	<p>In testing SVG documents with the JAWS screen reader it was shown that JAWS could read "title" tags, but we not able to get "desc," "label," or "text" tags to be read. The scripting group at Freedom scientific (maker of the JAWS screen reader) has not yet addressed JAWS' ability to work with this relatively new standard.
+	</p>
+	
+	
+	<a id="5.2.3.1" name="5.2.3.1"></a>
+	<h4>5.2.3.1	Resources </h4>
+	
+	<p>Accessibility features of SVG are discussed in detail at the W3C's Web Accessibility Initiative (WAI) site <a href="http://www.w3.org/TR/SVG-access">www.w3.org/TR/SVG-access</a>.
+	</p>
+	
+	<p>The Mapping for the Visually Impaired portal (MVI, <a href="http://tactile.nrcan.gc.ca">tactile.nrcan.gc.ca</a>) at Natural Resources Canada is a forerunner in attempting to make maps and geo-spatial data accessible on-line. Associated MVI members presented a seminal paper at the summer 2003 SVG OPEN conference, "SVG Maps for People with Visual Impairment" (<a href="http://www.svgopen.org/2003/papers/svgmappingforpeoplewithvisualimpairments">www.svgopen.org/2003/papers/svgmappingforpeoplewithvisualimpairments</a>), describing techniques for creation of audio-tactile maps in SVG and Flash formats. Some of this work bootstrapped off of trailblazing by Dr. John Gardner (himself blind), Vladimir Bulatov and team at Oregon State University's Science Access Project (<a href="http://dots.physics.orst.edu">dots.physics.orst.edu</a>). A paper describing their development and application of the Accessible SVG Viewer, incorporating haptic feedback and object description via a speech engine, was presented at the 2001 CSUN conference, "Smart Figures, SVG, And Accessible Web Graphics"(<a href="http://www.csun.edu/cod/conf/2001/proceedings/0103gardner.htm">www.csun.edu/cod/conf/2001/proceedings/0103gardner.htm</a>).
+	</p>
+	
+	<p>Not relevant to SVG so much as to Cartography and Map Symbols, Natural Resources Canada's online Atlas of Canada (<a href="http://atlas.gc.ca/site/english/learning_resources/carto">atlas.gc.ca/site/english/learning_resources/carto</a>) has a highly readable section (intended for students and teachers) entitled <em>The Fundamentals of Cartography</em>, which includes subsections <em>Map Content and Design for the Web and Cartographic Symbology</em>.
+	</p>
+	
+	
+	<a id="5.2.3.2" name="5.2.3.2"></a>
+	<h4>5.2.3.2	Methodology</h4>
+		
+	<p>Our recommendation for associating haptic effects (using Immersion TouchSense) with web-based visual information using SVG has been previously described in <em>5.2.3 Visuals to Haptics</em>. The procedure following differs in that it adds detail for adding sound, and provides code samples. User requirements are: 
+	<ol>
+		<li>An SVG viewer plug-in associated with their browser, such as the Adobe SVG Viewer, found at <a href="http://www.adobe.com/svg/viewer/install">www.adobe.com/svg/viewer/install</a></li>
+		<li>Immersion Web Plug-in, found at <a href="http://www.immersion.com/plugins">www.immersion.com/plugins</a></li>
+	</ol>
+	</p>
+	<p>The general procedure<sup><a href="geospatial.php.html#foot3">3</a></sup> for adding accessible graphics to HTML (in this context, a map, with audio and tactility (using Immersion-licensed TouchSense devices)) is as follows:
+	</p> 
+	<blockquote><em>1.	Construct the SVG</em><br />
+	Any text editor can be used. Third-party software, such as Adobe Illustrator 10 or 11 (<a href="http://www.adobe.com/products/illustrator">www.adobe.com/products/illustrator</a>), can greatly speed up development.
+	</blockquote>
+	
+	<a id="5.2.3.3" name="5.2.3.3"></a>
+	<h4>5.2.3.3	Code Sample 1: An  SVG that draws a fill red circle.</h4>
+	
+	<pre>
+		&lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"?&gt;
+		&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"    
+			"<a href="http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd</a>" &gt;
+		&lt;svg xmlns="<a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a>"
+				xmlns:xlink="<a href="http://www.w3.org/1999/xlink">http://www.w3.org/1999/xlink</a>"
+			xmlns:a="<a href="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/">http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/</a>" &gt;
+			&lt;circle cx="25" cy="25" r="20" fill="red"/&gt;
+		&lt;/svg&gt;
+	</pre>
+		
+	<blockquote>
+	<p><em>2.	Organize Objects in Layers for Interactivity</em><br />
+	Group all elements in appropriate layers and label both elements and layers. For example, in a map setting, put symbols for train station, bus station, and airport into one group, primary, secondary and tertiary roads into a second group, mountains and bodies of water forming two more groups. All interactive elements need to be grouped, which creates a group tag in the SVG document; in Illustrator, use the layers palette. Each element identifiable by screen readers needs a label, which will in turn be spoken. 
+	</p>
+	
+	<p>3.	Assign Haptic and Sound Effects 
+	Assign JavaScript functions to layers. Associate each haptic effect with a sound effect, which makes map features more evident to people with visual impairment, by placing before the opening of the group tag <g> an audio anchor <a:audio> with the attribute xlink:href set to the file name of the sound to be played. The event handler must also be set in the audio anchor with the "begin" attribute. Each category of map elements gets assigned a separate haptic effect with JavaScript, e.g. one for roads, one for built-up areas, one for water and occasionally one for borders. JavaScript functions to detect user input and trigger the events; in Illustrator, use the interactivity palette. Otherwise, for those versed in JavaScript, code can be added to the SVG with a simple text editor. 
+	</p>
+	</blockquote>
+	
+	<a id="5.2.3.3" name="5.2.3.3"></a>
+	<h4>5.2.3.4	Code Sample 2: Using Sample 1 code, group objects together, add sound and assign JavaScript functions as needed (shown in bold).</h4>
+	
+	<pre>
+		&lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"?&gt;
+		&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"    
+		"<a href="http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd</a>" &gt;
+		&lt;svg xmlns="<a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a>"
+			  xmlns:xlink="<a href="http://www.w3.org/1999/xlink">http://www.w3.org/1999/xlink</a>"
+			  xmlns:a="<a href="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/">http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/</a>" &gt;
+		  <strong>&lt;a:audio xlink:href="button.wav" begin="mybutton.mouseover"/&gt;</strong>
+		  <strong>&lt;g id="mybutton" onmouseover='parent.startHaptic()'&gt;</strong>
+			  &lt;circle cx="25" cy="25" r="20" fill="red"/&gt;
+			 <strong>&lt;/g&gt;</strong>
+			&lt;/svg&gt;
+	</pre>
+
+	<blockquote>
+	<p><em>4.	Incorporate SVG and haptic effects into HTML</em><br />
+	Use an EMBED tag to place the SVG graphic in a webpage. An object reference to the Immersion Web Plug-in must be made, along with JavaScript referring to the tactile effects.
+	</p>
+	</blockquote>
+		
+	<a id="5.2.3.5" name="5.2.3.5"></a>
+	<h4>5.2.3.5	Code Sample 3: The minimum HTML code required to implement haptics with SVG.</h4>
+	
+	<p>("Sports.ifr" is a resource file containing haptic effect "Punch" created with Immersion Studios.The previous sample provides "circleWithJavaScript.svg".)
+	</p>
+	
+	<pre>
+		&lt;HTML&gt;
+		
+		&lt;BODY onload="IMM_openIFR();"&gt;
+		
+		&lt;!-- Object reference to the Immersion Web Plugin must be included in the HTML.--&gt;
+		&lt;OBJECT
+			   classid="CLSID:5CA42785-ABC3-11d2-9F81-00104B2225C5"
+			codeBase="http://www.immersion.com/plugins/ImmWeb.cab#version=3,2,3,0"
+			id="ImmWeb" height="0" width="0"&gt;
+		&lt;/OBJECT&gt;
+		
+		&lt;SCRIPT LANGUAGE="JavaScript"&gt;
+		var imm_eref;
+		
+		function IMM_openIFR( )
+		{
+			imm_eref = document.ImmWeb.OpenForceResource("Sports.ifr");
+		}
+		
+		function startHaptic( )
+		{
+			document.ImmWeb.StartEffect("Punch", imm_eref);
+		}
+		&lt;/SCRIPT&gt;
+		&lt;EMBED NAME="circle" SRC="circleWithJavaScript.svg" WIDTH="700" HEIGHT="400"&gt;
+		&lt;/BODY&gt;
+		
+		&lt;/HTML&gt;
+	</pre>
+	
+	<blockquote>
+	<p><em>5.	Add both Immersion Web plug-in and user environment detection to HTML</em><br />
+	Use an OBJECT tag and JavaScript to detect presence of the Immersion plug-in associated with users' web browser. (Code supplied in Appendix. It is available from Immersion Developer site
+	 <a href="http://www.immersion.com/developer/technology/tutorials/index.php">www.immersion.com/developer/technology/tutorials/index.php</a>, log in required, within the tutorial "TouchSense in JavaScript - Web Tutorials: Detecting Immersion Web Plugin".)
+	</p>
+	</blockquote>	
+	
+	
+	<a id="5.2.3.6" name="5.2.3.6"></a>
+	<h4>5.2.3.6	GIS Applications and SVG for Government On-Line (GOL) Content</h4>
+	
+	<p>Maps are not only essential but powerful tools. Digital maps on the Web and in Geographic Information Systems (GIS) allow more and more people to make and use maps to analyze data in sophisticated ways. GIS applications are found in various government sectors, business, the natural and social sciences, urban planning and management, and many other fields. The two most prevalent GIS software applications are ESRI's ArcView and MapInfo, both of which do not have native SVG output. Fortunately, two third-parties have recognized the promise and utility of the SVG format, and have developed extensions to give ArcView and MapInfo better web deliverability with SVG export.
+	</p>
+	
+	<p>ESRI's ArcView (<a href="http://www.esri.com/software/arcview">www.esri.com/software/arcview</a>) is perhaps the most popular desktop GIS and mapping software, with more than 500,000 copies in use worldwide. ArcView provides data visualization, query, analysis, and integration capabilities along with the ability to create and edit geographic data.
+	MapViewSVG (www.uismedia.de/mapview/eng) is a third party extension for ArcView that converts maps within ArcView to the SVG format for dissemination on the Web. All vector based objects and text objects are converted into SVG, which can be panned and are infinitely zoomable without losing cartographic quality. Various elements can be turned on and off in the display, queries made, and many other features including web and email links, scale bars and overview maps, coordinate read-outs and interactive measurement tools.
+	</p>
+	
+	<p>MapInfo (<a href="http://www.mapinfo.com">www.mapinfo.com</a>) is another leading business mapping solution that allows users to create detailed maps, reveal patterns and trends in data that may otherwise be hard to discern, perform data analysis, manage geographically based assets, etc.
+	</p>
+	
+	<p>DBx Geomatic's SVGmapmaker (<a href="http://www.dbxgeomatics.com">www.dbxgeomatics.com</a>) is a program that exports MapInfo content to SVG in such a way that the result looks as much as possible like the original document in MapInfo. Several options are also available directly in MapInfo that take advantage of SVG's advanced graphic capabilities, such as filter effects, color gradients, opacity, hyperlinking, etc. DBx Geomatics is a Canadian company, with a strong clientele across federal (Public Works and Government Services Canada, Environment Canada, Canadian Coast Guard, Fisheries and Oceans Canada, Treasury Board of Canada Secretariat) through to municipal governments.
+	</p>
+	<br />
+
+<a id="5.3" name="5.3"></a>
+<h2>5.3	3D Content</h2>
+
+<p>3D content is usually an object, collection of objects, or a virtual environment. This document focuses on web3D, which entails an on-line, bandwidth efficient technology. Panoramic technologies are not discussed herein. Web3D is a navigable, interactive experience involving more than the spin and zoom nature of panoramas. This format allows for a large variety of time and user triggered events, with cause and effect through scripting and potential interface capabilities such as query and filter.
+
+<p>The term "Web3D" generally refers to a spectrum of on-line interactive 3D technologies, many of them proprietary. While we are concerned with the predominant, open-source standards of Virtual Reality Modeling Language (VRML) and X3D, readers are encouraged to extend accessibility and usability considerations herein to other formats.
+</p>
+	
+	
+	<h3>5.3.1	Transformations: Visual to Sound</h3>
+	
+	<p>For individuals who are blind, environmental sounds can reveal much more perceptual and navigational information about a modern urban landscape than the sighted would fathom. The following scenario is used by Massof (2003, p.271) to describe the level of aural acuity involved:
+	</p>
+	
+	<blockquote><em>After vision, hearing has the broadest band for acquiring information. Blind people rely almost entirely on hearing to perceive the environment beyond their reach. A highly skilled blind pedestrian can approach an intersection, listen to traffic, and on the basis of auditory information alone, judge the number and spatial layout of intersecting streets, the width of the street, the number of lanes of traffic in each direction, the presence of pedestrian islands or medians, whether or not the intersection is signalized, the nature of the signalizations, if there are turning vehicles, and the location of the street crossing destination.</em> 
+	</blockquote>
+	
+	<p>Massof concedes that "not all blind people demonstrate this skill" (2003, p.271); however, this example is still useful in illustrating how a 3D soundscape may be used to convey geo-spatial information to individuals who cannot view a map, or see their virtual environment surroundings.
+	</p>
+	
+	<p>Not only man made, but natural sound sources are important perceptual cues, though, as Potard (2003) states, they are rarely implemented or properly controlled in virtual 3D sound scenes. Sound sources such as a beachfront or waterfall usually exhibit a particular spatial extent which provides information on the physical dimensions, geometry and distance of the sound emitting object.
+	</p>
+	
+	<p>In way-finding tasks, auditory beacons can prove extremely useful in guiding a user to locations that are not visible due to buildings or walls. In observing the navigation paths of subjects, Grohn et al (2003) found that users used auditory cues to define approximate target locations, preferring visual cues only in the final approach.
+	</p>
+	
+	<p>Many of the consideration made in <a href="geospatial.php.html#5.2.1.1">5.2.1.1</a> Spatialized Audio can be applied to 3D contexts. However, more sophisticated 3D sound playback technologies can be found in almost all current computer sound hardware, which support not only two channel stereo, but surround speaker systems which are both widely available and affordable. Web3D technologies have usually supported spatialized audio playback, but newer browsers are pushing the sound envelope with streaming, multi-channel aural content.
+	</p>
+	
+	<p>Vision, in these implementations, can be combined with different types of sound, like speech, real-life sounds (auditory icons) or abstract musical sounds (earcons). Each of these types of sounds has advantages and disadvantages. The benefit of speech, for instance is that most of the time, the meaning of the message is relatively unambiguous. However, users need to listen to the whole message to understand the meaning.
+	</p>
+	
+	
+	<a id="5.3" name="5.3"></a>
+	<h4>5.3.1.1	Visual to Touch</h4>
+	
+	<p>Calle Sjöström and the Haptics Group at Certec (<a href="http://www.english.certec.lth.se">http://www.english.certec.lth.se</a>), Lund Institute of Technology, Sweden, has created the doctoral dissertation, "Non-Visual Haptic Interaction Design: Guidelines and Applications"
+	 (<a href="http://www.english.certec.lth.se/doc/hapticinteraction">www.english.certec.lth.se/doc/hapticinteraction</a>). They present five guidelines for researchers, designers, testers, developers and users of non-visual haptic devices:
+	</p>
+	<ul>
+		<li><em>Elaborate a virtual object design of its own</em></li>
+		<ul>
+			<li>Avoid objects with small and scattered surfaces. Objects with large connected surfaces are easier to find and explore</li>
+			<li>Use rounded corners rather than sharp ones.</li>
+			<li>Virtual objects in virtual worlds can be given virtual properties. Utilize them.</li>
+			<li>Optimize your haptic interface widgets as well. Think about affordance.</li>
+			<li>Make sure that the models are haptically accurate and work without vision.</li>
+			<li>Be aware that orientation of the object matters.</li>
+			<li>Consider different representations to enhance different properties (negative relief emphasizes the line whereas positive relief emphasizes the contained surface).</li>
+		</ul>
+		<li><em>Facilitate navigation and overview</em></li>
+		<ul>
+			<li>Provide well defined and easy-to-find reference points in the environment.</li>
+			<li>Avoid changing the reference system.</li>
+			<li>Make any added reference points easy to find and to get back to. They should also provide an efficient pointer to whatever they are referring to.</li>
+			<li>Utilize constraints and paths, but do so with care.</li>
+			<li>Virtual search tools can also be used.</li>
+		</ul>
+		<li><em>Provide contextual information (from different starting points)</em></li>
+		<ul>
+			<li>Present the haptic model or environment in its natural context.</li>
+			<li>Provide information about the purpose of the program.</li>
+			<li>Provide information about possibilities and pitfalls in the environment</li>
+			<li>Use a short text message such as a caption to an image or model, provided as speech or Braille. This can make a significant difference.</li>
+			<li>Idea: Consider using an agent or virtual guide that introduces the user to the object and also gives additional information if requested.</li>
+		</ul>
+		<li><em>Support the user in learning the interaction method and the specific environments and programs</em></li>
+		<ul>
+			<li>Be consistent; limit the number of rules to remember.</li>
+			<li>Give clear and timely feedback on the user's actions.</li>
+			<li>Facilitate imitating of other users and situations if possible.</li>
+			<li>Develop elaborated exercises to make the handling of the interaction tools and methods automatic in the user.</li>
+			<li>Idea: Consider using a virtual guide or remote users to help when a user comes to a new environment.</li>
+		</ul>
+	</ul>
+	
+	<p>These guidelines represent the learning the research group had gained during the testing of blind subjects using haptics devices in tasks such as the recognition of both geometrical and real life objects (with texture) and navigation in a traffic environment. Their work showed strong hope for effectively using haptic technology to translate both 2D and 3D graphical information and make it comprehensible to the Blind. Not only did they demonstrate that a blind person can orient and navigate in a virtual haptic environment, but that these tasks can be more efficient with complementary information via sound or Braille. They ascertained that a blind person can use virtual world familiarization for real life scenarios.</p>
+	</p>
+	
+	<p>For <em>virtual environments</em>, the researchers also provide five basic prerequisites for being able to work efficiently:
+	</p>
+	<ul>
+		<li>To be able to explore, understand and manipulate the objects in the environment</li>
+		<li>To navigate and to gain an overview</li>
+		<li>To understand the context</li>
+		<li>To use all modalities that are normally used</li>
+		<li>To learn the interaction method and the specific environments/programs</li>
+	</ul>
+	
+	
+	<a id="5.3.1.2" name="5.3.1.2"></a>
+	<h4>5.3.1.2	Visual to multimodal</h4>
+	
+	<p>In Sjöström's work, an emphasis on the need to utilize multiple sensory modalities is made. His guidelines for including sound are as follows:
+	</p>
+	<ul>
+		<li>Utilize all available modalities</li>
+		<li>Combine haptics with sound labels, a Braille display and/or synthetic speech for text output.</li>
+		<li>Try environmental sound to aid in getting an overview.</li>
+		<li>Use audio (both sound labels and environmental sound) to provide a context.</li>
+		<li>Provide feedback to the user via any available sense.</li>
+	</ul>
+	
+	
+	<a id="5.3.2" name="5.3.2"></a>
+	<h3>5.3.2	Format : Web3D - Virtual Reality Modeling Language (VRML)/X3D</h3>
+	
+	<p>Virtual Reality Modeling Language (VRML) is the ISO standard for interactive 3D web content. While there are many proprietary and open-source types of online, interactive, three-dimensional technologies, VRML has been the primary Web3D format. Various working groups have developed the next generation called <a href="http://www.web3d.org">X3D</a> (X for eXtensible), which is both backward compatible with VRML and integrated into XML. Specifications of VRML and X3D can be found at <a href="http://www.web3d.org/x3d/spec">www.web3d.org/x3d/spec</a>.
+	</p>
+	
+	<p>VRML does provide spatialized audio capabilities, though text-to-speech (i.e. passing text to a speech synthesizer) isn't. The benefit of speech, in contrast to abstract sound, is that meaning of the signal is relatively unambiguous. However, users generally have to listen to the full duration to comprehend. The <em>Adding Feeling, Audio and Equal Access to Distance Education Project</em> undertaken by the Adaptive Technology Resource Centre (University of Toronto) was able to take advantage of the VRML PROTO node to enable such a capability in the form of <em>SpeechClip</em> nodes. Features included the ability to set or modify voice, volume, speech rate, and pitch, as well as some ability to control the "play back" of the speech: interrupt a speech, pause/resume a speech, and loop a speech. However, the ideal implementation of text-to-speech in VRML could not be fully implemented at the time due to JSAPI (Java Speech Application Programming Interface) and browser security issues.
+	</p>
+	
+	<p>As X3D is an XML based technology, the best hope for seamless speech processing in Web3D may be in the parallel developing markup language efforts of HumanML (<a href="http://www.humanmarkup.org">www.humanmarkup.org</a>) and the Humanoid Animation Working Group (H-ANIM, <a href="http://www.h-anim.org">www.h-anim.org</a>). As for tactile interface support, there is very little in VRML. The <em>Adding Feeling, Audio and Equal Access to Distance Education Project</em> rendered VRML scenes haptically, though it was specific to a force feedback device no longer commercially available. An obvious choice of haptic device technology to pursue VRML/X3D compatibility with is the most widespread and affordable-Immersion Corporation's TouchSense line (<a href="http://www.immersion.com/consumer_electronics/applications/mice_trackballs.php">www.immersion.com/consumer_electronics/applications/mice_trackballs.php</a>).
+	</p>
+
+	<a id="5.3.2.1" name="5.3.2.1"></a>
+	<h4>5.3.2.1	Methodologies</h4>
+	
+	<p>The following two procedures implement VRML with haptics effects readable by Immersion-licensed TouchSense devices. 
+	</p>
+	
+	<p><em>Method 1: HTML plus VRML plus a Java Applet using EAI</em>
+	</p>
+	
+	<p>Approach: Traditional VRML with Java using the External Author Interface, interface which was designed to allow an external program (the applet) to access nodes in the VRML scene.
+	</p>
+	
+	<p>User requirements:
+	</p>
+	
+	<ol>
+		<li>Web3D Viewer with complete VRML support and EAI (External Author Interface) support. (Cortona VRML Client from Parallel Graphics (<a href="http://www.parallelgraphics.com/products/cortona">www.parallelgraphics.com/products/cortona</a>) works well).</li>
+		<li>Immersion Web Plug-in, found at <a href="http://www.immersion.com/plugins">www.immersion.com/plugins</a></li>
+		<li>Required additional java classes:<br />
+			<font face="Arial, Helvetica, sans-serif">
+			vrml.external.*<br />
+			vrml.external.field.*<br />
+			vrml.external.exception.*<br />
+			</font>	
+		</li>
+	</ol>
+	
+	<p class="cap">
+	*Cortona places these classes in corteai.zip ("old" and "new" External Authoring Interface (EAI) for Internet Explorer), plywood.jar (SAI and old EAI for Netscape). The default location of these are C:\Program Files\Common Files\ParallelGraphics\Cortona\corteai.zip and C:\Program Files\Netscape\Netscape\Plugins\plywood.jar 
+	</p>
+
+	<p>General procedure:
+	</p>
+	
+	<p>1.	Create HTML with the necessary JavaScript code needed to add touch sensations to web pages. 
+	</p>
+	
+	<a id="5.3.2.2" name="5.3.2.2"></a>
+	<h4>5.3.2.2	Code Sample 1: Initial HTML with JavaScript to enable immersion effects</h4>
+	<pre>
+	&lt;HTML&gt;
+
+	&lt;BODY onload="IMM_openIFR();"&gt;
+	
+	&lt;!-- An object reference to the Immersion Web Plugin must be included in the HTML.--&gt;
+	&lt;OBJECT
+			classid="CLSID:5CA42785-ABC3-11d2-9F81-00104B2225C5"
+			codeBase="http://www.immersion.com/plugins/ImmWeb.cab#version=3,2,3,0"
+		id="ImmWeb"
+		height="0" width="0"&gt;
+	&lt;/OBJECT&gt;
+	
+	&lt;SCRIPT LANGUAGE="JavaScript"&gt;
+	var imm_eref;
+	
+	function IMM_openIFR()
+	{
+		imm_eref = document.ImmWeb.OpenForceResource("Sports.ifr");
+	}
+	
+	function startHaptic()
+	{
+		document.ImmWeb.StartEffect("Punch", imm_eref);
+	}
+	
+	&lt;/SCRIPT&gt;
+		
+	&lt;/BODY&gt;
+	
+	&lt;/HTML&gt;
+	</pre>
+	
+	<p>2.	Create VRML content with events to be detected (in our case it was collision) 
+	</p>
+	
+	
+	<a id="5.3.2.3" name="5.3.2.3"></a>
+	<h4>5.3.2.3	Code Sample 2: VRML generating a red sphere that will detect collisions</h4>
+	<pre>
+	#VRML V2.0 utf8
+	
+	DEF COLLIDER Collision{
+	children [
+	
+	Transform {
+	  children Shape {
+	    appearance Appearance {
+	     material Material {  diffuseColor 1.0 0 0  }
+	    }
+	    geometry Sphere { }
+	   }
+	}
+	]
+	collide TRUE
+	}
+	</pre>
+	
+	<p>3.	Create a small applet to detect events from VRML using EAI. Detected events will call the JavaScript functions in the html to start effects. 
+	</p>
+	
+	
+	<a id="5.3.2.4" name="5.3.2.4"></a>
+	<h4>5.3.2.4	Code Sample 3: Java applet used with VRML from Step 2 to detect collisions.</h4>
+	
+	<pre>
+	import java.awt.*;
+	import java.lang.*;
+	import java.applet.Applet;
+	
+	import netscape.JavaScript.*;
+	import netscape.JavaScript.JSObject;
+	
+	// Needed for External Authoring Interface (EAI)
+	import vrml.external.*;
+	import vrml.external.field.*;
+	import vrml.external.exception.*;
+	import vrml.external.Node;
+	import vrml.external.Browser;
+	
+	public class EAI extends Applet implements EventOutObserver{
+	
+	  Browser browser = null;
+	  Object eventKey;
+	  JSObject win;
+	  boolean once = true;
+	  int counter = 0;
+	
+	  public void init(){
+			
+		 // Get a reference to the Navigator Window:
+		try {
+		  win = JSObject.getWindow(this);
+		}
+		catch (Exception e){
+			// Don't throw exception information away, print it.
+			e.printStackTrace();
+		}
+	
+		// Get the VRML Browser:
+		browser = Browser.getBrowser(this);
+	  
+		// Get a handle on the TouchSensor node (in this case it is the COLLIDER node):
+		Node ts = browser.getNode("COLLIDER");
+	
+		// Get collission time from the event collideTime 
+		EventOutSFTime bump = (EventOutSFTime)ts.getEventOut("collideTime");
+		bump.advise(this,null);
+	  }
+	
+	  // What do when when an event occurred
+	  public void callback(EventOut event, double timestamp, Object key){
+			
+		// Retrieve the state of isActive (see above the advise function)
+		EventOutSFBool state = (EventOutSFBool) key;
+			
+		// Muffle the number of calls made to the callback method
+		// (and consequently the haptic device as well) by only allowing
+		// a call to JavaScript once every 20th time.
+		if (counter % 20 == 0)   // calls js every 20th collision
+		  callJS();
+		  counter ++ ;
+		}
+	
+		// Call JavaScript in HTML
+		public void callJS()	{
+		  win.call("startHaptic", new String[1]);
+		}
+	}
+	</pre>
+	
+	<p>4.	Embed the VRML and Applet into the HTML. 
+	</p>
+	
+	
+	<a id="5.3.2.5" name="5.3.2.5"></a>
+	<h4>5.3.2.5	Code Sample 4: Embedding VRML and applet into the HTML from Step 1</h4>
+	<p><u>("Sports.ifr" is a resource file containing haptic effect "Punch" created with Immersion Studios.)</u>
+	</p>
+	
+	<pre>
+	
+	&lt;HTML&gt;
+	
+	&lt;BODY onload="IMM_openIFR();"&gt;
+	
+	&lt;!-- An object reference to the Immersion Web Plugin must be included in the HTML.--&gt;
+	&lt;OBJECT
+		classid="CLSID:5CA42785-ABC3-11d2-9F81-00104B2225C5"
+		codeBase="http://www.immersion.com/plugins/ImmWeb.cab#version=3,2,3,0"
+		id="ImmWeb"
+		height="0" width="0"&gt;
+	&lt;/OBJECT&gt;
+	
+	&lt;SCRIPT LANGUAGE="JavaScript"&gt;
+	var imm_eref;
+	
+	function IMM_openIFR()
+	{
+		imm_eref = document.ImmWeb.OpenForceResource("Sports.ifr");
+	}
+	
+	function startHaptic()
+	{
+		document.ImmWeb.StartEffect("Punch", imm_eref);
+	}
+	
+	&lt;/SCRIPT&gt;
+	
+		&lt;EMBED NAME="vrml" SRC="sphereWithCollision.wrl" WIDTH="700" HEIGHT="400"&gt;
+		&lt;applet name="EAI" code="EAI.class" MAYSCRIPT align="baseline" width="500" height="100"&gt;
+			&lt;PARAM NAME="name" VALUE="EAI"&gt;
+			&lt;PARAM NAME="MAYSCRIPT" VALUE=""&gt;
+		&lt;/applet&gt;
+	&lt;/BODY&gt;
+	
+	&lt;/HTML&gt;. 
+	</pre>
+	
+	<p><em>Additional Note:</em> Only works with JVM from Microsoft, which no longer will be supported after September 30, 2004. In future, Cortona's VRML client will support the latest versions of Java and Java Virtual Machine from Sun. In the meantime, this version of Java can be used with a solution offered by J-Integra from Intrinsyc (<a href="http://j-integra.intrinsyc.com">j-integra.intrinsyc.com</a>). See details at <a href="http://www.parallelgraphics.com/developer/kb/article/162">www.parallelgraphics.com/developer/kb/article/162</a>
+	</p>
+	
+	<p><em>Method 2: HTML plus VRML plus a Java Applet using Xj3D</em>
+	</p>
+	
+	<p>Approach: This method uses Xj3D, a toolkit written in Java for VRML97 and X3D content. It was a project initiated by Sun Microsystems in 1999 and handed over to the Web3D Consortium. The toolkit allows users to incorporate VRML97 and X3D content into their Java applications, such as using it to load VRML/X3D content.
+	</p>
+	
+	<p>However, it is important to note that Xj3D in still in development. Although the toolkit in its present state can be utilized effectively for some applications, it may be inadequate for visual-to-haptic applications. The current status of  Xj3D (<a href="http://www.xj3d.org/status.html">www.xj3d.org/status.html</a>) indicates that many of the nodes/features, such as collision, have been implemented or partially implemented and tested locally, but have yet to be proven compliant with all Web3D published conformance tests. 
+	</p>
+	
+	<p>Theoretically, when Xj3D is fully compliant, it may be used effectively in visual-to-haptic applications. This would eliminate the need for additional plug-ins, such as Parallel Graphics' Cortona. Furthermore, since the toolkit was written with Java 1.4 it is fully compatible with Sun Microsystems' JVM. The Xj3D toolkit can be obtained from <a href="http://www.xj3d.org/download.html">www.xj3d.org/download.html</a>. 
+	</p>
+	
+	<p>User requirements:
+	</p>
+	<ol>
+		<li>Immersion Web Plug-in, found at www.immersion.com/plugins</li>
+		<li>Required additional java classes:<br />
+			Download the latest stable release of the toolkit from www.xj3d.org/download.html to implement an xj3d browser capable of viewing VRML. </li>
+	</ol>
+	
+	<p>General procedure summary:
+	</p>
+	<ol>
+		<li>Create HTML with the necessary JavaScript code needed to add touch sensations to web pages.</li>
+		<br /><br />
+		<li>Create VRML content with events to be detected (in our case it was collision).</li>
+		<br /><br />
+		<li>Create a small applet to load the VRML file to an Xj3D browser and to detect events from VRML using EAI. Detected events will call the JavaScript functions in the html to start effects.</li>
+		<br /><br />
+		<li>Embed the Applet into the HTML.</li>
+	</ol>
+	
+	
+	<a id="5.3.2.6" name="5.3.2.6"></a>
+	<h4>5.3.2.6	VRML/X3D and GIS</h4>
+	
+	<a id="geovrml" name="geovrml"></a>
+	<h5>GeoVRML</h5>
+	<p>GeoVRML, an amendment to the Virtual Reality Modeling Language specification (and incorporated in VRML's offspring X3D), gives web3D a geographic coordinate specification. The GeoVRML Working Group of the Web3D Consortium has developed tools and recommended practices for the representation of geographical data using the web3D. The group's goal is to enable geo-referenced data, such as maps and 3D terrain models, to be viewed over the web with conventional browsers.
+	</p>
+	
+	<a id="resources" name="resources"></a>
+	<h5>Resources</h5>
+	<p>Geo-spatial example scenes in VRML, X3D and XHTL formats are available at the Web3D Consortium's site <a href="http://www.web3d.org/x3d/content/examples/GeoSpatial">www.web3d.org/x3d/content/examples/GeoSpatial</a>
+	</p>
+	
+	<p>The 3D Metanet Atlas Platform ("3MAP", <a href="http://www.ping.com.au">www.ping.com.au</a>) is an initiative to represent the Earth in it's entirety, giving users the ability to navigate (or zoom down) to the planet's surface for finer detail of any geographic region, or further still, rural setting-given existing data linked on the Web for that specific setting. Standards utilized for the platform include that of the Open GIS Consortium, Java and X3D/VRML. User navigation is limited (as unconstrained movement in 3D environments often disorients the user) to four modes:
+	</p>
+	<ul>
+		<li>Orbital - examine or rotate the globe from space</li>
+		<li>Satellite/map - "bird's eye view" looking down</li>
+		<li>Flight - above land or cityscape with view angle control</li>
+		<li>Walk - across land or through cityscape, in an enhanced "target lock facility"</li>
+	</ul>
+	
+	<p>An added user interface component allows the user to dynamically query content or filter out unwanted information.
+	</p>
+	
+	
+	<a id="5.3.3" name="5.3.3"></a>
+	<h3>5.3.3	Navigation and Way-finding Guidelines</h3>
+	
+	<p>Norm Vinson of the National Research Council's Institute for Information Technology had published the notable work "Design Guidelines for Landmarks to Support Navigation in Virtual Environments"<sup><a href="geospatial.php.html#foot4">4</a></sup> In it, he addresses user difficulty in gaining and maintaining bearings and contexts by promoting proper landmark provision. 
+	</p>
+	
+	<p>The guidelines are not only applicable to aiding user navigation of geographic content. Vinson writes, "As computers become more powerful and 3D visualization more common, fly-throughs of networks (electronic or biological) and complex molecular structures, simulations, and data visualizations will also pose navigational problems." Following are only excerpts of core elements from the paper, where individual guidelines may not be clearly elaborated; refer to the original for clarity. Vinson makes constant use of the acronym VE, which refers to Virtual Environment.
+	</p>
+	
+	<a id="learnenviron" name="learnenviron"></a>
+	<h5>Learning about an Environment</h5>
+	<p>Newcomers to an environment rely heavily on landmarks as points of reference. As experience with the environment increases, navigators acquire route knowledge that allows them to navigate from one point in the environment to another. Route knowledge is acquired and expanded by associating navigational actions to landmarks.</p>
+	</p>
+	
+	<p><strong>Guideline 1: It is essential that the VE contain several landmarks.</strong><br />
+	Generally, additional experience with the environment increases the representational precision of route distances, and of the relative orientations and positions of landmarks. Additional experience may also transform the representation from route knowledge to <em>survey knowledge</em>. Survey knowledge is analogous to a map of the environment, except that it does not encode a typical map's top-down or bird's-eye-view perspective. Rather survey knowledge allows the navigator to adopt the most convenient perspective on the environment for a particular task. Survey knowledge acquired through navigational experience also incorporates route knowledge. In comparison to route knowledge, survey knowledge more precisely encodes the spatial proprieties of the environment and its objects.
+	</p>
+	
+	<a id="lndmrk1" name="lndmrk1"></a>
+	<h5>Landmark Types and Functions</h5>
+	<p>To include landmarks in a VE, one must know what constitutes a landmark. In his seminal work on urban planning and cognitive maps, Kevin Lynch found that people's cognitive maps generally contained five types of elements: <em>paths, edges, districts, nodes,</em> and <em>landmarks</em>.
+	</p>
+	
+	<p><strong>Guideline 2: Include all five types of landmarks in your VE:</strong><br />
+	
+	<a id="table9" name="table9"></a>
+	<table width="100%" border="1">
+	  <tr>
+		<td><em>Types</em></td>
+		<td><em>Examples</em></td>
+		<td><em>Functions</em></td>
+	  </tr>
+	  <tr>
+		<td>Paths</td>
+		<td>Street, canal, transit line</td>
+		<td>Channel for navigator movement</td>
+	  </tr>
+	  <tr>
+		<td>Edges</td>
+		<td>Fence, river</td>
+		<td>Indicate district limits</td>
+	  </tr>
+	  <tr>
+		<td>Districts</td>
+		<td>Neighborhood</td>
+		<td>Reference point</td>
+	  </tr>
+	  <tr>
+		<td>Nodes</td>
+		<td>Town square, public bldg.</td>
+		<td>Focal point for travel </td>
+	  </tr>
+	  <tr>
+		<td>Landmarks<sup><a href="geospatial.php.html#foot5">5</a></sup></td>
+		<td>Statue</td>
+		<td>Reference point into which one does not enter</td>
+	  </tr>
+	</table>
+	<p class="cap">Table 9: Five landmark types.</p>
+	</p>
+	
+	<a id="lndmrk2" name="lndmrk2"></a>
+	<h5>Landmark Composition</h5>
+	<p>It is important to include objects intended to serve as landmarks in a VE. However, it is also important that those objects be designed so that navigators will choose them as landmarks. There are two issues regarding the way in which landmarks should be constructed. One issue relates to the landmark's physical features. The other issue relates to the ways in which landmarks should be distinctive.
+	</p>
+	
+	<p><strong>Guideline 3: Make your (manmade) landmarks distinctive with features contributing to memorability of both object and location:</strong>
+	</p>
+	<ul>
+		<li>Significant height</li>
+		<li>Expensive building materials & good maintenance</li>
+		<li>Complex shape</li>
+		<li>Free standing (visible)</li>
+		<li>Bright exterior</li>
+		<li>Surrounded by landscaping</li>
+		<li>Large, visible signs</li>
+		<li>Unique exterior color, texture</li>
+	</ul>
+	
+	<p><strong>Guideline 4: Use concrete objects, not abstract ones, for landmarks.</strong><br />
+	A study of VE landmarks also suggests that memorable landmarks increase navigability. Landmarks consisting of familiar 3D objects, like a model car and a fork, made the VE easier to navigate. In contrast, landmarks consisting of colorful abstract paintings were of no help. It was felt that the 3D objects were easier to remember than the abstract art and that this accounted for the difference in navigability.
+	</p>
+	
+	<p>In a natural environment, any large manmade object stands out. Accordingly, experts in orienteering (natural environment navigation) relied most on manmade objects as cues when navigating. They also used land contours and water features. However, they tried not to rely on vegetation since it is a rapidly changing, and therefore unreliable, feature in natural environments.
+	</p>
+	
+	<a id="lndmrk3" name="lndmrk3"></a>
+	<h5>Landmarks in Natural Environments</h5>
+	
+	<p>
+ 	<a id="table10" name="table10"></a>	
+	<table width="100%" border="1">
+	  <tr>
+		<td><strong>Manmade Items</strong></td>
+		<td><strong>Land Contours</strong></td>
+		<td><strong>Water Features</strong></td>
+	  </tr>
+	  <tr>
+		<td>roads</td>
+		<td>hills</td>
+		<td>lakes</td>
+	  </tr>
+	  <tr>
+		<td>sheds</td>
+		<td>slopes</td>
+		<td>streams</td>
+	  </tr>
+	  <tr>
+		<td>fences</td>
+		<td>cliff faces</td>
+		<td>rivers</td>
+	  </tr>
+	</table>
+	<p class="cap">Table 10: Sample landmark items.</p>
+	</p>
+	
+	<p><strong>Guideline 5: Landmarks should be visible at all navigable scales.</strong><br />
+	Consider environment scales that differ from that of a city. For instance, on a larger scale, a cognitive map of a country could have cities themselves as landmarks. It is not unusual for a user to have the ability to view a VE at different scales by "zooming in" or "zooming out". In such cases, it is important for the designer to provide landmarks at all the scales in which navigation takes place.
+	</p>
+	
+	<p>It is important to remember that the distinctiveness of an object is a crucial factor in its serving as a landmark.
+	</p>
+	
+	<p><strong>Guideline 6: A landmark must be easy to distinguish from nearby objects and other landmarks.</strong>
+	</p>
+	
+	<p><strong>Guideline 7: The sides of a landmark must differ from each other.</strong><br />
+	Objects intended to serve as landmarks must be distinctive in several ways. First, they must be distinctive in regard to nearby objects. Second, a landmark must be easy to distinguish from other landmarks, especially nearby ones. Otherwise, a navigator could confuse one landmark with another, and, as a result, select the wrong navigational action (e.g. make a wrong turn). Third, the sides of each landmark should differ from one another. These differences can help navigators determine their orientation.
+	</p>
+	
+	<p><strong>Guideline 8: Landmark distinctiveness can be increased by placing other objects nearby.</strong>
+	</p>
+	
+	<p><strong>Guideline 9: Landmarks must carry a common element to distinguish them, as a group, from data objects.</strong><br />
+	Consider VEs whose features are constrained by the underlying data, such as the human circulatory system. Although some of the objects in these VEs can serve as landmarks, it is possible to further assist navigation by augmenting the VE with additional objects that only function as landmarks. However, navigators must easily recognize these objects as landmarks and realize that they are only landmarks. 
+	</p>
+	
+	<a id="pathlndmrk" name="pathlndmrk"></a>
+	<h5>Combining Paths and Landmarks: Landmark Placement</h5>
+	
+	<p><strong>Guideline 10: Place landmarks on major paths and at path junctions.</strong><br/>
+	Memorability of a building and its position was also affected by the building's location in the environment. Memorability is enhanced when the building is located on a major path or at a path junction. 
+	</p>
+	
+	<p>Building Positions Contributing to Memorability:
+	</p>
+	<ul>
+		<li>Located on major path</li>
+		<li>Visible from major road</li>
+		<li>Direct access from street (esp. no plaza or porch)</li>
+		<li>Located at important choice points in circulation pattern</li>
+	</ul>
+	
+	<p>Minimize distortions in cognitive maps, while being aware that the term "cognitive map" is misleading in that it suggests that mental representations of environments are very much like images. In reality, our cognitive maps contain many features that are not image-like. Cognitive maps contain categorical and hierarchical structures and many spatial distortions, some of which cannot even be represented in an image.
+	</p>
+	
+	<a id="grid" name="grid"></a>
+	<h5>Using a Grid</h5>
+	
+	<p><strong>Guideline 11: Arrange paths and edges (see Guideline 2) to form a grid.</strong>
+	</p>
+	
+	<p><strong>Guideline 12: Align the landmarks' main axes with the path/edge grid's main axes.</strong>
+	</p>
+	
+	<p><strong>Guideline 13: Align each landmark's main axes with those of the other landmarks.</strong><br />
+	To minimize the distortions, the designer must create a VE that induces a hierarchical representation whose districts form a grid. A consequence of the grid's spatial regularity is that the spatial relationships between districts are a good approximation of the spatial relationships between objects in those districts. 
+	</p>
+	<br />
+
+<a id="5.4" name="5.4"></a>
+<h2>5.4 Modality Complementarity</h2>
+<p>Cross-modal interactions are characteristic of normal perception. Experiencing 
+  information in one sensory modality while having congruent, supporting information 
+  in another assists us in carrying out our most mundane tasks effectively. Stating 
+  such would not be hard to find general agreement on. What might surprise people 
+  are some findings by cognitive and neuroscientists about sensory &#8220;processing&#8221;, 
+  to use a computational paradigm expression. While the sensory systems are thought 
+  of as being distinct, there are indications that we have our &#8220;wires crossed,&#8221; 
+  though in a beneficial way. For example, PET scans have revealed to researchers 
+  that visual processing is not only involved in tactile perception, but is necessary 
+  for optimal performance in tactile orientation discrimination. The visual cortex 
+  is intimately involved in processing certain kinds of tactile information (Sathian, 
+  2001).</p>
+<p>Regardless, there are strong arguments against a seemingly synesthesic mixing 
+  or synergistic &#8220;whole greater than its parts&#8221; sensory processing 
+  phenomenon at work in the human mind. Translation of a full meaning equivalence 
+  from one sensory modality through to another is debatable. It is unlikely that 
+  the combination of hearing and touching can ever replace the sensation of seeing 
+  something. Loomis (2003) observes:</p>
+<p>If the sensory bandwidth of the substituting sense (or senses) is grossly inadequate, 
+  it is simply not possible to carry out the desired function. For example, the 
+  informational demands of driving a car are not likely to be met through a combination 
+  of audition and touch. </p>
+<p>When attempting to optimize the interaction of user with interface, online 
+  media content designers have an increasing variety of modalities they can apply. 
+  Information is presentable through vision, touch, sound, or preferably, a combination 
+  of these sensory modalities. We are challenged with the task of choosing the 
+  most apt combination of information channels to communicate a specific message, 
+  or, the context for users to forage for what they consider relevant, in the 
+  manner they are best suited to. Sheer efficiency, of course, is not the only 
+  measure of success. Short of established guidelines for sensory modality transformation, 
+  we urge the designer of any kind of online content to employ reiterative, inclusive 
+  user testing.
+</p>
+<br />
+
+<a id="5.5" name="5.5"></a>
+<h2>5.5	Appendix: Code Sample for adding both Immersion Web plug-in and user environment detection to HTML.</h2>
+
+<p>(Available from Immersion Developer site www.immersion.com/developer/technology/tutorials/index.php, log in required, within the tutorial "TouchSense in JavaScript - Web Tutorials: Detecting Immersion Web Plugin".)
+
+<pre>
+	...
+	&lt;OBJECT
+	classid="CLSID:5CA42785-ABC3-11d2-9F81-00104B2225C5"
+	codebase="#version=3,2,3,0"
+	id="ImmWeb"
+	height="0" width="0"&gt;
+	 &lt;EMBED type="application/x-Immersion-Web-Plugin" 
+	 name="ImmWeb" hidden="true" src="myfile.txt"&gt;
+	&lt;/OBJECT&gt;
+	
+	&lt;SCRIPT language="JavaScript"&gt;
+	&lt;!--hide this script from non-JavaScript-enabled browsers
+	
+	var imm_onTouch = false;
+	
+	var imm_usrAgt = navigator.userAgent.toLowerCase();
+	var imm_isIE = (navigator.appName == "Microsoft Internet Explorer");
+	var imm_isNN = (navigator.appName == "Netscape");
+	var imm_isIE4plus = imm_isIE && (parseInt(navigator.appVersion) &gt;= 4);
+	var imm_isNN45plus = imm_isNN && (parseFloat(navigator.appVersion) &gt;= 4.5);
+	var imm_isNN6plus = imm_isNN && (parseFloat(navigator.appVersion) &gt;= 5);
+	var imm_isNN7plus = imm_isNN6plus && (navigator.vendor == "Netscape");
+	var imm_isWin = (imm_usrAgt.indexOf("win")!=-1);
+	var imm_supportsImm = imm_isWin;
+	var imm_NNMinPlugin = new Array(3, 2, 3, 0);
+	var imm_IEDontAskOff = (IMM_getCookie("DontAskIE")!= "ON");
+	var imm_NNDontAskOff = (IMM_getCookie("DontAskNN")!= "ON");
+	
+	if(imm_supportsImm)  {
+	 IMM_sufficientSystem();
+	}
+	
+	function IMM_sufficientSystem()  {
+	// If Netscape Navigator 4.x, Netscape 7.x or Mozilla 1.x and not Netscape 6
+	if(imm_isNN45plus && !imm_isNN6plus || imm_isNN7plus)  {
+	 if(navigator.plugins["Immersion Web Netscape Plugin"] &&
+		IMM_sufficientNNPlugin())  {
+	   imm_onTouch=true;
+	 }
+	 else  {    // ImmWeb plugin is not installed
+	   if(imm_NNDontAskOff)  {
+		 imm_installNow = confirm("You must install the Immersion Web plugin to experience tactile sensations on this web page. Install now?");
+		 if(imm_installNow)  {
+				if(imm_isNN7plus)
+					alert("Sorry, Gecko based browsers are not currently supported.");
+				else
+					self.location.href="download_NN_plugin.html";
+		 } else  {
+		   imm_askAgain = confirm("You have chosen not to install the Immersion Web plugin at this time. Would you like to be reminded again later?");
+		   if(!imm_askAgain)  {
+			 IMM_setCookie("DontAskNN", "ON", "month");
+		   }
+		   else  {
+			 IMM_setCookie("DontAskNN", "ON", "now");      
+		   }
+		 }
+	   } else {
+			alert("You're cookie setting is inhibiting you from downloading the Immersion Web Plugin. If you have changed your mind and would like to install, please click on the appropriate link above.");
+		}
+	 }
+	}
+	
+	// If Internet Explorer 4 or greater
+	if(imm_isIE4plus)  {
+	 if(document.ImmWeb.ImmWebInstalled)  {
+	   imm_onTouch=true;
+	 }
+	 else  {    // ImmWeb plugin is not installed
+	   if(imm_IEDontAskOff)  {
+		 imm_installNow = confirm("You must install the Immersion Web plugin to experience tactile sensations on this web page. Install now?");
+		 if(imm_installNow)  {
+		   self.location.href="http://www.immersion.com/plugins/download_IE_plugin.html"
+		 }
+		 else  {
+		   imm_askAgain = confirm("You have chosen not to install the Immersion Web plugin at this time. Would you like to be reminded again later?");
+		   if(!imm_askAgain)  {
+			 IMM_setCookie("DontAskIE", "ON", "month");
+		   }
+		   else  {
+			 IMM_setCookie("DontAskIE", "ON", "now");      
+		   }
+		 }
+	   }
+	 }
+	}
+	}   // end function IMM_sufficientSystem()
+	
+	function IMM_sufficientNNPlugin()  { 
+		// Assumes Netscape plugin description = "Immersion Web Plugin a.b.c.d" where a.b.c.d = version 
+		var needDownload = false; 
+		var installedVersion = navigator.plugins["Immersion Web Netscape Plugin"].description.split(" ")[3].split("."); 
+		// Need Download if installed plugin version &lt; minimum plugin version 
+		for(index=0; index&lt;4; index++)  { 
+			   if(installedVersion[index] &gt; imm_NNMinPlugin[index])  {
+				break;
+			} 
+			else if(installedVersion[index] &lt; imm_NNMinPlugin[index])  { 
+				needDownload = true; 
+				break; 
+			} 
+		} 
+		return (!needDownload); 
+	}   // end function IMM_sufficientNNPlugin() 
+	
+	
+	//****** Cookie utility functions ******//
+	
+	function IMM_setCookie(name, value, expire) {
+	 var today = new Date();
+	 var expiry = new Date();
+	
+	 switch(expire)  {
+	   case "day":
+		 expiry.setTime(today.getTime() + 1000*60*60*24*1);
+		 break;
+	   case "week":
+		 expiry.setTime(today.getTime() + 1000*60*60*24*7);
+		 break;
+	   case "month":
+		 expiry.setTime(today.getTime() + 1000*60*60*24*30);
+		 break;
+	   case "year":
+		 expiry.setTime(today.getTime() + 1000*60*60*24*365);
+		 break;
+	   default:
+		 expiry.setTime(today.getTime());
+	 }
+	 document.cookie = name + "=" + escape(value) + "; path=/; expires=" + expiry.toGMTString()
+	}
+	
+	function IMM_getCookie(Name) {
+	 var search = Name + "="
+	 if (document.cookie.length &gt; 0) {                   // if there are any cookies
+	   offset = document.cookie.indexOf(search) 
+	   if (offset != -1) {                               // if cookie exists 
+		 offset += search.length                         // set index of beginning of value
+		 end = document.cookie.indexOf(";", offset)      // set index of end of cookie value
+		 if (end == -1) 
+		   end = document.cookie.length
+		 return unescape(document.cookie.substring(offset, end))
+	   } 
+	 }
+	}
+	
+	// stop hiding --&gt;
+	&lt;/SCRIPT&gt;
+	
+	...
+</pre>
+<br /><br/>
+
+<hr />
+<a id="foot3" name="foot3"></a><p class="foot"><sup>3</sup>Steps two and three are adapted from <em>SVG Maps for People with Visual Impairment</em> (<a href="http://www.svgopen.org/2003/papers/svgmappingforpeoplewithvisualimpairments">www.svgopen.org/2003/papers/svgmappingforpeoplewithvisualimpairments</a>)
+</p>
+
+<a id="foot4" name="foot4"></a><p class="foot"><sup>4</sup>Proceedings of CHI '99, Pittsburgh, PA., May, 1999. Available online through portal.acm.org by search.
+</p>
+
+<a id="foot5" name="foot5"></a><p class="foot"><sup>5</sup>Author's footnote: Note that Lynch refers to these items as "elements" and reserves a specific meaning for the term "landmark".
+</p>
+
+
+
+<br /><br /><br />
+			 
+			 
+		 <p class="bottom">
+          We acknowledge the financial support of the Department of Canadian 
+          Heritage through the Canadian Culture Online Program </p>
+					<p><a href="http://www.canadianheritage.gc.ca"><img src='../pch_e_col.gif' alt="Canadian Heritage Logo" border="0" /></a></p>
+        </p>
+
+
+
+
+		 </div>
+		</td>
+		
+   </tr>
+   <tr>
+
+		<td colspan="2" width="805" style="background-color: white;">
+				<img src="../hr.gif" alt="horizontal rule" style="position: absolute; left: 80px;" />
+			  <a href="http://www.utoronto.ca/atrc"><img src='../atrc_logo.gif' alt="the ATRC logo" border="0" alt="link to ATRC website" align='right'/></a>
+		</td>
+	</tr>
+	<tr>	
+		<td colspan="2" width="805" style="background-color: white;">&nbsp;
+		</td>
+  </tr>
+</table>
+</body>
+</html>
+	

@@ -1,0 +1,21 @@
+body {margin-left:-15px; margin top: -5px; background-color: #003366; color: black; font-size: 12pt; font-family: Times New Roman, Serif}
+td {padding: 0px; margin: 0px;}
+table {padding: 0px; margin: 0px; border: none}
+
+h1 {font-size: 1.1em; font-weight: bold}
+h1.subtitle{color: #003366}
+
+h3 {font-size: 1.15em; font-weight: bold}
+h4 {font-size: 1.05em; font-weight: bold}
+h5 {font-size: 1.025em; font-style: italic}
+
+
+
+a.nav{font-family: Times New Roman; font-size: .9em; text-decoration: none; font-weight: bold; color: #003366}
+a.nav:hover{text-decoration: overline underline; color: #c4790f}
+a.nav:visted{text-decoration: no underline; color: #c4790f}
+
+a.credit{text-decoration: none; font-weight: bold; color: #003366}
+a.credit:hover{color: #c4790f}
+
+.mainbody{margin-left: 100px; }

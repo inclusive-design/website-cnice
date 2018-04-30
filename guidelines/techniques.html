@@ -1,0 +1,87 @@
+<!DOCTYPE xhtml PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>CNICE Video Description On-Line Recommendation</title>
+</head>
+<body bgcolor="white">
+<p class="guidetech">[<a href="index.html">GUIDELINES</a>] [TECHNIQUES]</p>
+<hr />
+<img alt="the CNICE logo shows several people dancing around a globe and a book" id="logo" src="cnice_logo.gif" />
+<h1>CNICE Video Description On-Line Recommendation<br /><span class="small">[TECHNIQUES]</span></h1>
+<a id="abstract" /><h2>Abstract</h2>
+<p class="abstract">This document includes the techniques for implementing the guidelines described in the <a href="index.html">guidelines document</a>.<p>
+<h2>Table of Contents</h2>
+<ul class="contents">
+<li><a class="contents" href="techniques.html#abstract">Abstract</a></li>
+<li>1. <a class="contents" href="techniques.html#guidelines">Techniques</a>
+	<ul>
+	<li>1. <a class="contents" href="techniques.html#t1">This is an example guideline</a></li>
+	<li>2. <a class="contents" href="techniques.html#t2">Ensure that all video is accompanied by an audio and textual description</a></li>
+	</ul>
+</li>
+<li>2. <a class="contents" href="techniques.html#glossary">Glossary</a></li>
+<li>3. <a class="contents" href="techniques.html#ref">References and Further Reading</a></li>
+</ul>
+<a id="guidelines" /><h2>1. Techniques</h2>
+
+<a id="t1" /><h3 class="guideline">Guideline 1 - This is an example guideline.</h3>
+<p class="guidedesc">This is where you would describe how to implement the guideline. You might want to include an example box:</p>
+<div class="example"><p><b>Example (HTML/script)</b></p>
+<p class="script">&lt;script lang="script"&gt;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;while (x) {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+&lt;/script&gt;<br />
+</p>
+</div>
+<p class="guidedesc">Alternately you might want to show what not to do:</p>
+<div class="badexample"><p><b>Bad Example (HTML/script)</b></p>
+<p class="badscript">&lt;script lang="script"&gt;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;while (x) {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do(something, bad);<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+&lt;/script&gt;<br />
+</p>
+</div>
+
+<p class="techniques">(<a class="techniques" href="index.html#g1">Guideline Description for Guideline 1</a>)</p>
+
+<a id="t1_1" /><h4 class="guideline">Guideline 1.1 - This is an optional sub-guideline of guideline 1. <span class="optional">[optional]</span> </h4>
+<p class="subguidedesc">[insert text here at some point]</p>
+<p class="techniques">(<a class="techniques" href="index.html#g1_1">Guideline Description for Guideline 1.1</a>)</p>
+
+<a id="t2" /><h3 class="guideline">Guideline 2 - Ensure that all video is accompanied by an audio and textual description</h3>
+<p class="guidedesc">Audio and textual descriptions can be added using <a class="glosslink" href="techniques.html#gloss-smil"><acronym title="Synchronized Media Integration Language">SMIL</acronym></a>:</p>
+<div class="example"><p><b>Example (SMIL)</b></p>
+<p class="script">
+&lt;par dur="1:00:00"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;video dur="1:00:00" region="videoregion" src="video.rm"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;audio begin="0:00:00" src="audio-desc.rm" systemAudioDesc="on"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;textstream src="transcription.rt" region="textregion"&gt;<br />
+&lt;par&gt;<br />
+</p>
+</div>
+<p class="techniques">(<a class="techniques" href="index.html#g2">Guideline Description for Guideline 2</a>)</p>
+
+
+
+<a id="glossary" /><h2>2. Glossary</h2>
+<dl>
+<a id="gloss-defined_term" /><dt>Defined Term</dt>
+<dd>This is what the definition of this term looks like.</dd>
+<a id="gloss-smil" /><dt>SMIL</dt>
+<dd>Synchronized Media Integration Language. SMIL is a W3C recommendation. It allows for video, audio, plain-text and other types of media to be integrated into a single rich presentation which can serve various streams or combinations of streams depending on the needs and desires of the user. SMIL is the standard captioning language used on the Web.
+</dd>
+</dl>
+
+<a id="ref" /><h2>3. References and Further Reading</h2>
+<ul class="ref">
+<li>This is a sample reference. <a class="ref" href="http://">and here is a link to it</a>.</li>
+</ul>
+<hr /><br />
+<p class="guidetech">[<a href="index.html">GUIDELINES</a>] [TECHNIQUES]</p>
+<br />
+<img src="http://www.w3.org/WAI/wcag1AAA.png" />
+</body>
+</html>

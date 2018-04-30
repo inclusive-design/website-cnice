@@ -1,0 +1,31 @@
+/* CSS Document */
+
+
+
+body {background-color: #ffffff; margin-left: -8px; margin-right: -8px; margin-top: 0px; }
+
+h1 {margin-left: 10px; margin-right: 10px; font-family: arial, helvetica, verdana, sans-serif; font-weight: bold; font-size: 20pt;}
+h2 {margin-left: 10px; margin-right: 10px; font-family: arial, helvetica, verdana, sans-serif; font-weight: bold; font-size: 14pt;  }
+h3 {margin-left: 10px; margin-right: 10px; font-family: arial, helvetica, verdana, sans-serif; font-weight: bold; font-size: 13pt;  }
+h4 {margin-left: 10px; margin-right: 10px; font-family: times roman, serif; font-weight: bold; font-size: 14pt;  }
+h5 {margin-left: 10px; margin-right: 10px; font-family: times roman, serif; font-weight: bold; }
+
+
+p {margin-left: 20px; margin-right: 150px; font-family: times roman, serif; font-color: #000000; }
+p.cap {margin-left: 20px; margin-right: 150px; font-family: times roman, serif; font-weight: bold; font-color: #000000; font-size: 10pt; }
+p.foot {margin-left: 20px; margin-right: 150px; font-family: times roman, serif; font-color: #000000; font-size: 10pt; }
+
+
+ol {margin-left: 40px; margin-right: 150px; }
+
+ul {margin-left: 40px; margin-right: 150px; list-style-type:disc; }
+
+dl {margin-left: 20px; margin-right: 150px; }
+
+a {color: #003366; text-decoration: underline; font-weight:bold; }
+a:hover {color: #c47900;}
+a.nav:hover {text-decoration: underline overline;}
+a.nav {font-weight:normal; text-decoration: none}
+a.name {color:#000000; text-decoration: none;}
+
+pre {margin-left: 20px; margin-right: 150px; font-family: arial;}

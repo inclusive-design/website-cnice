@@ -1,0 +1,558 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><HEAD>
+<TITLE>WCAG 2.0 - Techniques for iShell Authoring Software</TITLE>
+</HEAD>
+<BODY bgColor=white>
+<P>[<A href="http://www.w3.org/TR/WCAG20/">WCAG 2.0 GUIDELINES</A>]</P>
+<HR>
+
+<H1>WCAG 2.0 - Techniques for iShell authoring software</H1>
+<H2><a name="abstract"></a>Abstract</H2>
+<P>This document includes the techniques for implementing the 
+guidelines described in the <A href="http://www.w3.org/TR/WCAG20/">WCAG 2.0</A> 
+using the Tribeworks iShell authoring tool. iShell is a multimedia authoring and 
+development program for both Windows and Macintosh platforms. 
+<P>
+<H2><a name="status"></a>Status of this Document</H2>
+<P>This document is still in the draft stage. It has been compiled 
+with reference to WCAG 2.0 working draft as published by the W3C. It is not 
+however a work by or in collaboration with the W3C. This document has been 
+created primarily at the Resource Centre for Academic Technology at the 
+University of Toronto with help from Digital Frog International and Tribeworks.
+<P>
+<H2><a name="editors"></a>Editors and Contributors</H2>
+<P>Duff McCourt - Resource Centre for Academic Technology<BR>Jan 
+Richards - Resource Centre for Academic Technology<BR>Simon Clark - Digital Frog 
+International<BR></P>
+<HR>
+
+<H2>Table of Contents</H2>
+<UL>
+  <LI><A href="#abstract">Abstract</A> 
+  <LI><A href="#status">Status of this Document</A> 
+  <LI><A href="#editors">Editors and Contributors</A>
+  <LI><a href="#intro">Introduction</a>
+  <LI>A. <A href="#guidelines">Techniques</A> 
+    <UL>
+      <LI><A href="#perceivable">Guideline 1: Make Content Perceivable by Any 
+        User</A> 
+        <UL>
+          <LI>1.1 <A 
+      href="#t11">All non-text content that can be expressed in words has a text 
+            equivalent of the function or information that the non-text content 
+            was intended to convey. </A> 
+          <LI>1.2 <A 
+      href="#t12">Synchronized media equivalents are provided for time-dependent 
+            presentations. </A> 
+          <LI>1.3 <A 
+      href="#t13">Both [information/substance] and structure are separable from 
+            presentation. </A> 
+          <LI>1.4 <A 
+      href="#t14">All characters and words in the content can be unambiguously 
+            decoded. </A> 
+          <LI>1.5 <A 
+      href="#t15">Structure has been made perceivable to more people through presentation(s), 
+            positioning, and labels. </A> 
+          <LI>1.6 <A 
+      href="#t16">Foreground content is easily differentiable from background 
+            for both auditory and visual default presentations. </A></LI>
+        </UL>
+      <LI><A 
+    href="#operable">Guideline 2: Ensure that Interface Elements in the Content 
+        are Operable by Any User</A> 
+        <UL>
+          <LI>2.1 <A 
+      href="#t21">All functionality is operable at a minimum through a keyboard 
+            or a keyboard interface. </A> 
+          <LI>2.2 <A 
+      href="#t22">Users can control any time limits on their reading, interaction, 
+            or responses unless control is not possible due to nature of real 
+            time events or competition. </A> 
+          <LI>2.3 <A 
+      href="#t23">User can avoid experiencing screen flicker. </A> 
+          <LI>2.4 <A 
+      href="#t24">Structure and/or alternate navigation mechanisms have been added 
+            to facilitate orientation and movement in content.</A> 
+          <LI>2.5 <A 
+      href="#t25">Methods are provided to minimize error and provide graceful 
+            recovery. </A></LI>
+        </UL>
+      <LI><A 
+    href="#understandable">Guideline 3: Make content and controls understandable 
+        to as many users as possible. </A> 
+        <UL>
+          <LI>3.1 <A 
+      href="#t31">Language of content can be programmatically determined.</A> 
+          <LI>3.2 <A 
+      href="#t32">The definition of abbreviations and acronyms can be unambiguously 
+            determined. </A> 
+          <LI>3.3 <A 
+      href="#t33">Content is written to be no more complex than is necessary and/or 
+            supplement with simpler forms of the content.&nbsp;</A> 
+          <LI>3.4 <A 
+      href="#t34">Layout and behavior of content is consistent or predictable, 
+            but not identical.</A> </LI>
+        </UL>
+      <LI><A 
+    href="#robust">Guideline 4: Use Web technologies that maximize the ability 
+        of the content to work with current and future accessibility technologies 
+        and user agents.</A> 
+        <UL>
+          <LI>4.1 <A 
+      href="#t41">Technologies are used according to specification</A> 
+          <LI>4.2 <A 
+      href="#t42">Technologies that are relied upon by the content are declared 
+            and widely available.</A> 
+          <LI>4.3 <A 
+      href="#t43">Technologies used for presentation and user interface support 
+            accessibility or alternate versions of the content are provided that 
+            do support accessibility.</A> </LI>
+        </UL>
+      </LI>
+    </UL>
+  <LI>B. <As 
+  href="#append">Appendices</A> 
+    <UL>
+      <LI>1. <A 
+    href="#appendix-nav">nav.xd</A></LI>
+    </UL>
+  <LI>C. <A 
+  href="#glossary">Glossary</A> 
+  <LI>D. <A 
+  href="#ref">References and Further Reading</A> </LI>
+</UL>
+<H2><a name="intro"></a>Introduction</H2>
+<P>Tribeworks iShell is a multimedia authoring and development program for both 
+Windows and Macintosh platforms. Its uses range from streaming video and virtual 
+reality tours to interactive kiosks, custom MP3 players and video games. iShell 
+documents are well suited to being distributed across the Internet as well as 
+standalone programs on CD or DVD-ROM. With this techniques document and the 
+iShell accessibility package from DFI, it will be possible to create 
+cross-platform accessible media for nearly any purpose. This document assumes a 
+working knowledge of the iShell authoring tool and, for those checkpoints and 
+methods which reference the DFI AT plug-in, a working knowledge of that software 
+as well. Some checkpoints and methods reference W3C techniques documents. These 
+documents are created by the W3C group and are referenced in good faith.
+<H2><a name="guidelines"></a>A. Techniques</H2>
+<H2 class=guide><a name="perceivable"></a>Guideline 1 - Ensure all content is 
+  Perceivable.</H2>
+
+<H4><a name="t11" id="t11"></a>checkpoint 1.1 - All non-text content that can 
+  be expressed in words has a text equivalent of the function or information that 
+  the non-text content was intended to convey. [core] </H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#text-equiv">Checkpoint Description for 
+Checkpoint 1.1</A>)</P><P>There are several ways to provide text alternates for 
+non-text content in iShell. <BR><BR><B>Method 1</B>: You can use HTML to include 
+your images into an iShell document. When using HTML, use the <I>alt</I> element 
+in the <I>img</I> tag for text equivalent. Longdescs may also be desirable in 
+some cases. For more information, see the <A 
+href="http://www.w3.org/TR/WCAG20-HTML-TECHS/#image-text-equivalent">HTML 
+Techniques for checkpoint 1.1</A>.<BR><BR><B>Method 2</B>: It is relatively 
+simple in iShell to apply a 'Mouse Idle' event to images in a document which can 
+then be given a command to pop up a dialog containing the text alternate. A 
+mouse leave event on the image can be set to dismiss the dialog. The down-side 
+of this method is that other uses of Mouse Idle or Mouse Leave may be interfered 
+with.<BR><BR><B>Method 3</B>: Using the DFI AT plug-in, ensure that every image 
+is included in the Tab Handler list (for more information on setting up a Tab 
+Handler, see <A 
+href="#t2_1">Techniques for 
+Checkpoint 2.1</A>). Once the Tab Handler list is properly set up, a single 
+keyboard event is used to capture any presses of the 'd' key (using 'd' as a 
+trigger for alternate descriptions should be considered a normative standard). 
+These key presses then launch either a spoken description of the content or a 
+text dialog as described in Method 2, or both. Using the Speak command from the 
+DFI AT plug-in will, when directed towards an image object, automatically speak 
+the contents of a text file which has the same name as the image, only with the 
+'.txt' extension (example: the text description for 'picture.png' will be stored 
+in 'picture.txt' in the same directory). These text files must be manually 
+created.</P>
+
+<P><B>Example</B></P>
+<P><B>Method 3</B>: This <A 
+href="images/4.jpg">screenshot</A> shows an example of three images in a project, 
+  all of which have been referenced by a Tab Handler. It also shows how a Speak 
+  command with the pointer set to Current Focus can deal with all three images 
+  at once. Not shown are the three text files which follow the naming convention 
+  detailed above.</P>
+<P>&nbsp;</P>
+<H4><a name="t12" id="t12"></a>checkpoint 1.2 - Synchronized media equivalents 
+  are provided for time-dependent presentations. [core] </H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#media-equiv">Checkpoint Description for 
+Checkpoint 1.2</A>)</P><P>Neither the base iShell authoring tool nor the DFI AT 
+plug-in currently support <A class=glosslink 
+href="#gloss-SMIL">SMIL</A>, 
+which is the ideal system for captioning and other synchronized media. 
+Hopefully, this will change in future versions. In the meantime, there are 
+various alternate methods.<BR><BR><B>Method 1</B>: Movies can be captioned 
+externally in the original media(i.e. Quicktime, Real, etc.). This adds 
+simplicity but is lacking in flexibility. For further instructions, see the 
+reference manual for the authoring tool in question.<BR><BR><B>Method 2</B>: For 
+each Movie object on the screen, create a caption Text field. Within the movie, 
+set various Time events, one for each caption. In each Time event, create a Tell 
+command which changes the contents of the caption field to the desired caption. 
+If there is a long time between captions, a Time event with an empty Tell 
+command should be used to clear the caption field. This method can also be used 
+for synchronized speech or sound by using a Time event with either a Speak 
+command (using the DFI AT plug-in) or a Sound command. The disadvantage of this 
+method is that, while a Movie object in iShell need not be tied directly to a 
+specific clip, the captions will be. When using this method it is important to 
+remember not to switch different movies into the same Movie object. A simple way 
+to work around this is to create an iShell project file containing movie and 
+captions both for each clip you use and to, when movie switching is desired, 
+accommodate for both the movie and the caption field and switch in iShell 
+projects rather than movie clips.</P>
+
+<P><B>Example</B></P>
+<P><B>Method 2</B>: This <A 
+href="images/7.jpg">screenshot</A> shows an example of a movie and a caption field. 
+  There are three time events in the movie each of which places a new caption 
+  in the Text field named "Caption."</P>
+<P>&nbsp;</P>
+<H4><a name="t13"></a>checkpoint 1.3 - Both [information/substance] and structure 
+  are separable from presentation. [core] </H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#content-structure-separation">Checkpoint 
+Description for Checkpoint 1.3</A>)</P>
+<P>Currently there is no way to extract all textual/informational content from 
+  an iShell document in a way which preserves structure. Any information which 
+  is stored in a plain-text file and then used via a Text field is easily accessible 
+  although its relationship to other elements in the document can not be programmatically 
+  determined. Hopefully, future versions of iShell will support exporting or extracting 
+  of text content. Alternately, future versions of the DFI AT plug-in may support 
+  direct piping of spoken content to a socket or interface in plain-text. In the 
+  meantime, the best practise is to put as much textual content as possible into 
+  text files rather than iShell internal labels as the latter are much harder 
+  to extract.</P>
+<P>&nbsp;</P>
+
+<H4><a name="t14"></a>checkpoint 1.4 - All characters and words in the content 
+  can be unambiguously decoded. [core] </H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#unambiguous-decoding">Checkpoint Description 
+for Checkpoint 1.4</A>)</P>
+<P>iShell outputs Unicode by default. It is a normative suggestion that all text 
+  and HTML documents used in an iShell project be encoded in Unicode whenever 
+  possible. This will satisfy checkpoint 1.4 automatically by means of Unicode 
+  being the de facto standard. In situations where Unicode is insufficient or 
+  undesirable, there is no programmatic way to declare the method of encoding. 
+  A visible message indicating the style of encoding may be desirable but is not 
+  required. Hopefully, future versions of iShell will address this.</P>
+<P>&nbsp;</P>
+
+<H4><a name="t15"></a>checkpoint 1.5 - Structure has been made perceivable to 
+  more people through presentation(s), positioning, and labels. [extended] </H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#structure-emphasis">Checkpoint Description 
+for Checkpoint 1.5</A>)</P><P>It is important to ensure that the structural and 
+navigational elements of the document can be easily distinguished from the 
+content elements. You can identify the transition from structure to content with 
+various types of cues, including color, position and visual style (font, text 
+size, etc.). When creating buttons or links in an iShell document be sure to use 
+already existing metaphors to distinguish content from structure. For example, 
+use buttons with the raised "3-D" appearance and use color and underlining to 
+identify text links. Furthermore, it is important to <I>not</I> use these 
+metaphors for reasons of presentation. Do not use in-line underlining and color 
+change for purposes of emphasis, for example, as this will confuse users into 
+believing that these elements should be hyperlinks.</P>
+<P>Also, the visual (and audio) structural layout of a document should not change 
+  as you navigate. It is important that both the position and appearance of navigational 
+  and structural elements remain consistent within the document.</P>
+<P>&nbsp;</P>
+
+<H4><a name="t16"></a>checkpoint 1.6 - Foreground content is easily differentiable 
+  from background for both auditory and visual default presentations. [extended] 
+</H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast">Checkpoint Description 
+for Checkpoint 1.6</A>)</P>
+<P>When including both foreground and background elements in an iShell document 
+  (i.e. when one element is appearing in front of another) ensure that the foreground 
+  information is clearly differentiable from and perceivable despite the background 
+  information. Specifically, test that the foreground content is still perceivable 
+  in 256 shade grayscale. When using a background image which includes a wide 
+  range of color values ensure that the alpha channel is set to at least 40%. 
+  This will cause the background image to become increasingly transparent and 
+  thus blend into the document background color and be less obtrusive or distracting. 
+  Also, there should be a prominent "disable background images" button in any 
+  document where the possibility of interference between background image and 
+  foreground content exists. When including audio information, ensure that foreground 
+  sounds are at least 20db(roughly 4 times) louder than background sounds.</P>
+<P>&nbsp;</P>
+<H2 class=guide><a name="operable"></a>Guideline 2 - Ensure that Interface Elements 
+  in the Content are Operable by Any User.</H2>
+
+<H4><a name="t21"></a>checkpoint 2.1 - All functionality is operable at a minimum 
+  through a keyboard or a keyboard interface. [core] </H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#keyboard-operation">Checkpoint Description 
+for Checkpoint 2.1</A>)</P><P>iShell is primarily mouse driven by default. Using the DFI 
+AT plug-in to create a Tab Handler object in the root document will allow for 
+basic keyboard navigation. The Tab Handler itself simply captures any depresses 
+of the "tab" key. In order for the Tab handler to intelligently navigate the 
+document, a Loaded event must be added to the Tab Handler. One Tab command for 
+each tabbable item in the document must then by added to the Loaded event. Each 
+Tab command takes an Object parameter which must refer to another object in the 
+document. The order in which the Tab commands appear in the Tab Handler list 
+will dictate the order of tabbing through the page. In order to meet this 
+checkpoint, every element which supports mouse interaction must appear on the 
+Tab Handler list. Note that, if Checkpoint 1.1 is being satisfied using Method 
+3, all images must also appear on the Tab Handler list. The Tab Handler by 
+default duplicates the Mouse Enter event upon first tabbing to an object and the 
+Mouse Up event when "enter" is pressed. If more complicated Mouse events are 
+used in a project, other methods may have to be employed to provide keyboard 
+equivalents. One such possible method is to redefine the mouse events duplicated 
+tab events. These parameters are defined in the properties dialog for the Tab 
+Handler object. Another method for providing more sophisticated keyboard 
+interaction is to add Tab Event events into the specific object which requires 
+alternate interaction. By changing the parameters of the Tab Event, it is 
+possible to redefine the way tabbing is handled for a single object while 
+leaving the rest unchanged. Finally, more sophisticated keyboard interaction can 
+also be achieved by adding further Keyboard events to the Tab Handler and 
+defining behavior for other specific keypresses (as was done for "d" in the 
+example attached to Checkpoint 1.1).</P>
+
+<P><B>Example</B></P>
+<P><B>Tab Handler</B>: This <A 
+href="images/8.jpg">screenshot</A> shows an example of how a Tab Handler might 
+  look which contains three Tab commands, each associated with an Image object 
+  in the project.</P>
+<P><B>Example</B></P>
+<P><B>Redefining Tab Events</B>: This <A 
+href="images/9.jpg">screenshot</A> shows an example of a Tab Event being used 
+  to change the Tab Enter behavior of a single Image object to toggle visibility 
+  of the image. This would have no effect on or relation to any Mouse Enter event 
+  which may also be defined for the object. </P>
+<P>&nbsp;</P>
+
+<H4><a name="t22"></a>checkpoint 2.2 - Users can control any time limits on their 
+  reading, interaction, or responses unless control is not possible due to nature 
+  of real time events or competition. [core] </H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#time-limits">Checkpoint Description for 
+Checkpoint 2.2</A>)</P><P>For every element in an iShell document which uses the 
+duration attribute as a timer there must be some easily perceivable indication 
+of the fact that a timer is running and a simple way (preferably a "stop timer" 
+or "I need more time" button) to stop the timer or lengthen the duration. If 
+multiple timers are running at one and elements will move or appear and 
+disappear dependent upon timers or time-dependent user responses there must be a 
+"pause" or "stop all timers" button. In extreme cases, a "step forward" button 
+may also be necessary which will increment all timers by some small amount with 
+each click.</P>
+<P>The exception to these rules is in cases where the content is streaming from 
+  a live source or when the interaction is inherently time-dependent because of 
+  the actions of external parties, such as a multi-player game or online auction.</P>
+<P>&nbsp;</P>
+
+<H4><a name="t23"></a>checkpoint 2.3 - User can avoid experiencing screen flicker. 
+  [core] </H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#flicker">Checkpoint Description for 
+Checkpoint 2.3</A>)</P>
+<P>Do not cause screen flicker (which can be symptomatic of rapid background or 
+  color changes) in the range of 3 to 49 Hz. In effect, do not have the screen 
+  dramatically change color or brightness at a rate equal to or higher than three 
+  times per second.</P>
+<P>&nbsp;</P>
+
+<H4><a name="t24"></a>checkpoint 2.4 - Structure and/or alternate navigation mechanisms 
+  have been added to facilitate orientation and movement in content. [extended] 
+</H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms">Checkpoint Description 
+for Checkpoint 2.4</A>)</P>
+<P>When a document grows to great length (in excess of 50,000 words or 50 perceived 
+  pages) the author must include internal navigation mechanisms within the content. 
+  For example, if a document contains a scrolling text field which holds 50 pages 
+  of text, the author should delineate it into pages and/or chapters and provide 
+  a linking mechanism (such as a button) which will allow the user to jump directly 
+  to the beginning of the next chapter without scrolling.</P>
+<P>&nbsp;</P>
+
+<H4><a name="t25"></a>checkpoint 2.5 - Methods are provided to minimize error 
+  and provide graceful recovery. [extended] </H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#minimize-error">Checkpoint Description for 
+Checkpoint 2.5</A>)</P><P>In any situation where user input is required and 
+unacceptable or unexpected input is given, an iShell document must generate an 
+error rather than failing silently. The error report should be informative but 
+unobtrusive. In situations where a large amount of user input is required (such 
+as extensive text input) a more comprehensive form of error catching (such as a 
+spell checker) may be required.</P>
+<P>Also, in any situation where a user's selection could 
+cause an irreversible change such as deleting a file, a confirmation dialog must 
+exist. In programs where such confirmations may be annoying or obtrusive, it is 
+acceptable to include a user preference which allows the confirmation to be 
+disabled. 
+<P>iShell automatically handles run-time errors with a pop-up 
+box. Using the <A 
+href="#appendix-nav">nav.xd</A> 
+meta document, it is possible to over-ride errors by including an error event. 
+Note that this will suppress the default behavior.</P>
+
+<P><B>Example</B></P>
+<P><B>Error Handler</B>: This <A 
+href="images/10.jpg">screenshot</A> shows an example of 
+how a Error Handler might look which contains an DFI AT plug-in Speak command to 
+speak out loud the error text which would normally appear in an iShell generated 
+pop-up. For this method to work, it must be contained in a <A 
+href="#appendix-nav">nav.xd</A> 
+style meta document. The Key Handler element which appears above the Error event 
+is part of the <A 
+href="#appendix-nav">nav.xd</A> 
+functionality and is not related to the Error Handler. </P><BR>
+<H2 class=guide><a name="understandable"></a>Guideline 3 - Make content and controls 
+  understandable to as many users as possible.</H2>
+
+<H4><a name="t31"></a>checkpoint 3.1 - Language of content can be programmatically 
+  determined. [core] </H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#language">Checkpoint Description for 
+Checkpoint 3.1</A>)</P><P>There is no innate capability in iShell to 
+programmatically determine the language of content. To achieve partial 
+compliance with this checkpoint, use HTML when including a text object into an 
+iShell project. When using HTML, use the relevant HTML techniques for this 
+checkpoint, such as the lang attribute.</P>
+
+<P><B>HTML</B></P>
+<P>&lt;p lang="en/us"&gt;Here is a paragraph which is in American English except 
+  for &lt;span lang="fr"&gt;un petit peu en Francais.&lt;/span&gt;&lt;/p&gt;</P>
+<P>&nbsp;</P>
+<H4><a name="t32" id="t32"></a>checkpoint 3.2 - The definition of abbreviations 
+  and acronyms can be unambiguously determined. [extended] </H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#acronym-abbr-def">Checkpoint Description for 
+Checkpoint 3.2</A>)</P><P>iShell does not support an innate definition/expansion 
+scheme, but there are several methods for incorporating such a scheme into 
+iShell.<BR><BR><B>Method 1</B>: Create an empty text field somewhere in your 
+document. Creating a text field at the bottom of the document can function as a 
+status bar and also be used for satisfying other checkpoints such as <A 
+href="#t1_1">Checkpoint 1.1</A>. 
+Once this text field has been created, you can create each acronym or 
+abbreviation as a separate label and use a mouse event to send a Tell Field 
+command to the status bar with the expansion text. This method is not 
+recommended but is included for the sake of completion.<BR><BR><B>Method 2</B>: 
+The iShell HTML parser does not currently support the ABBR and ACRONYM tags. 
+However, if you use HTML to include all your textual content, you can use these 
+tags (as described in the HTML techniques document) to specify definitions and 
+expansions. Although this will not be readily accessible in current versions of 
+iShell, the information will be programmatically available and will hopefully be 
+taken advantage of by future, more compliant versions of 
+iShell.<BR><BR><B>Method 3</B>: Using RTF (Rich Text Format) to encode your 
+documents, format all acronyms and abbreviations and Strike-Through. Immediately 
+following each acronym or abbreviation, include the expansion or definition 
+formatted as Invisible. When imported into iShell, this formatting system will 
+be automatically interpreted as Hot Text. Create a status bar Text field (as in 
+Method 1) and use a Hot Text event within the Text object which is sensitive to 
+a mouse event. Within the Hot Text event, include a Tell Field command which 
+writes the value of the Hot Text to the status bar field. A single event (or 
+pair of events) can handle all instances of Hot Text within an RTF document.</P>
+
+<P><B>Example</B></P>
+<P><B>Method 3</B>: This <A 
+href="images/11.jpg">screenshot</A> shows an example of how an RTF document containing 
+  Hot Text can be set up with two Hot Text events. The first event sets the content 
+  of a Text field to the value of the Hot Text on Mouse Enter. The second event 
+  resets the contents of the field to an empty string on Mouse Leave.</P>
+<P>&nbsp;</P>
+<H4><a name="t33"></a>checkpoint 3.3 - Content is written to be no more complex 
+  than is necessary and/or supplement with simpler forms of the content. [extended] 
+</H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#content-complexity">Checkpoint Description 
+for Checkpoint 3.3</A>)</P>
+<P>An iShell document, like any other web document must be written using the clearest 
+  and simplest language that will serve the purpose and with an inclusionary intent 
+  whenever possible. The best guidelines are to be found in the Checkpoint Description 
+  for Checkpoint 3.3.</P>
+<P>&nbsp;</P>
+
+<H4><a name="t34"></a>checkpoint 3.4 - Layout and behavior of content is consistent 
+  or predictable, but not identical. [extended] </H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#consistent-behavior">Checkpoint Description 
+for Checkpoint 3.4</A>)</P>
+<P>An iShell document, like any other web document must be written in a consistent 
+  fashion such that the content is not confusing or hard to follow. The best guidelines 
+  are to be found in the Checkpoint Description for Checkpoint 3.4.</P>
+<P>&nbsp;</P>
+<H2 class=guide><a name="robust"></a>Guideline 4 - Use Web technologies that maximize 
+  the ability of the content to work with current and future accessibility technologies 
+  and user agents.</H2>
+
+<H4><a name="41"></a>checkpoint 4.1 - Technologies are used according to specification. 
+  [core] </H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#use-spec">Checkpoint Description for 
+Checkpoint 4.1</A>)</P>
+<P>iShell makes it possible to make use of various other technologies in your 
+  projects. When using technologies such as HTML or RTF, ensure that your usage 
+  of these technologies meets existing standards and specifications. Specifically, 
+  when using HTML, you should state which <A 
+href="http://www.w3.org/">w3c</A> HTML specification you are using (HTML 4.0, 
+  XHTML transitional, etc.) and ensure that you do so properly. Also, when using 
+  HTML you should ensure that your HTML meets WCAG 2.0 standards. Consult the 
+  HTML techniques document for further information.</P>
+<P>&nbsp;</P>
+
+<H4><a name="t42"></a>checkpoint 4.2 - Technologies that are relied upon by the 
+  content are declared and widely available. [extended] </H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#declare-technology">Checkpoint Description 
+for Checkpoint 4.2</A>)</P><P>Tribeworks iShell includes the iShell Runtime Environment, 
+which is sufficient technology with which to view almost all information which 
+might be encoded in an iShell document. The only external technology which is 
+commonly relied upon by iShell is the Quicktime Media Player. Quicktime is 
+readily and easily available. If you are distributing your project in CD form, 
+you can include the latest Quicktime player on the CD. If you are distributing 
+over the Internet, the iShell Runtime Environment will automatically inform the 
+user of where the player can be downloaded from.</P>
+<P>If your project requires any other external technology, ensure that the technology 
+  is readily available and provide instructions for acquiring the technology if 
+  the user does not already have it.</P>
+<P>&nbsp;</P>
+
+<H4><a name="t43"></a>checkpoint 4.3 - Technologies used for presentation and 
+  user interface support accessibility or alternate versions of the content are 
+  provided that do support accessibility. [extended] </H4>
+<P>(<A class=techniques 
+href="http://www.w3.org/TR/WCAG20/#technology-supports-access">Checkpoint Description 
+  for Checkpoint 4.3</A>)</P>
+<H2>&nbsp;</H2>
+<H2><a name="appendices"></a>B. Appendices</H2>
+
+<H4>nav.xd - an accessibility document for inclusion in iShell 
+projects.</H4>
+<P>Many accessibility functionalities in iShell are global to an entire project. 
+  It makes much more sense to abstract these functionalities out to a document 
+  which can then be included in every other document in the project than it would 
+  to unnecessarily do the same work many times.<BR>
+  <BR>
+  The two primary uses of nav.xd are for error catching and key catching. For 
+  example, if you are using the DFI ART-plugin and would like to use the Text-to-Speech 
+  engine, the nav.xd approach allows you to provide one simple functionality for 
+  turning TTS on and off. All you need to do is include a Key Handler element 
+  in nav.xd which then contains a Keyboard event. Normatively, the standard for 
+  turning TTS on and off in iShell projects is a single press of the 't' key. 
+  Beneath the Keyboard event which captures the 't' keypress, include an If-Else 
+  command which detects the current TTS state and then activates a SpeechPrefs 
+  command to change the value. This <A 
+href="images/6.jpg">screenshot</A> shows what a TTS toggle should ideally look 
+  like in nav.xd.<BR>
+  <BR>
+  Likewise, you can include any global keyboard functionality in nav.xd using 
+  similar methods. Also, error catching (as described in <A 
+href="#t2_5">the techniques for checkpoint 2.5</A> and shown in <A 
+href="images/10.jpg">this screenshot</A>) can be handled best by being abstracted 
+  into the nav.xd document.<BR>
+  <BR>
+  Once the nav.xd document is completed, simply include it in every other document 
+  as a root level element. It is important that nav.xd always be the LAST element 
+  in the list. <A href="images/3.jpg">This screenshot</A> shows an example of 
+  nav.xd properly included in a iShell document. </P> 
+<HR>
+<BR>
+<P>[<A 
+href="http://cnice.idrc.ocadu.ca/guidelines/index.html">WCAG 2.0 GUIDELINES</A>]</P>
+</BODY></HTML>

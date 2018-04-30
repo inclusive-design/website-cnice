@@ -1,0 +1,57 @@
+body {background-color: white; margin-left: 5em; margin-right: 5em; font-family: verdana, sans-serif}
+
+h1 {color: #194b7f}
+
+h2 {color: #53789f; clear: left}
+
+h3 {color: #53789f}
+
+h4 {color: #53789f; font-size: .8em}
+
+dt {font-weight: bold; margin-top:1em;  margin-bottom:.4em}
+
+a {color: #336666}
+
+a:hover {text-decoration: none; color: #339999}
+
+
+.abstract {padding-left: 3em; padding-right: 3em; background-color:#f3db82}
+
+.small {font-size: 75%}
+
+.guideline {border: thin solid #f3db82; background-color: #c7e1ea; padding: .5em}
+
+.guidedesc {padding-left: 2em}
+
+.subguidedesc {padding-left: 4em}
+
+.example {padding: 1em; margin-left: 7em; margin-right: 7em; background-color:#ffffcc; border: thick solid black}
+
+.badexample {padding: 1em; margin-left: 7em; margin-right: 7em; background-color:#ffffcc; border: dashed thick red}
+
+.guidetech {text-align: center; font-size: .75em; font-family: verdana, sans-serif}
+
+.script {color: blue; margin-left: 2em; font-size: .75em; font-family: courier, serif}
+
+.badscript {color: red; margin-left: 2em; font-size: .75em; font-family: courier, serif}
+
+.infobox {padding-left: 1em; padding-right: 1em; margin-left: 8em; margin-right: 8em; background-color:#ccffcc; border: thin #99ff99 solid}
+
+.optional {color: #cc33cc}
+
+a.glosslink {font-style: italic; text-decoration: none}
+
+a.glosslink:hover {background-color: #c7e1ea}
+
+a.ref {font-family: times new roman, serif; font-style: italic}
+
+a.contents {font-weight: bold; font-family: verdana, sans-serif; font-size: 1.1em}
+
+a.external {color: #339933}
+
+a.techniques {color: #993333; font-weight: bold}
+
+h4.guideline {margin-left: 4em} 
+
+
+#logo {float: left}
